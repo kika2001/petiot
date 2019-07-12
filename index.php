@@ -8,7 +8,6 @@
 </head>
 <body>
    olá sou eu, o ricardo.
-   mudei buqwefdvbe uwijfenrq
     
 </body>
 </html> 
