@@ -50,16 +50,16 @@
                     <ul class="navbar-nav">
                         <li class="nav-item"><a class="nav-link" href="index.php">Home</a></li>
                         <li class="nav-item"><a class="nav-link" href="about-us.php">About Us</a></li>
-                        <li class="nav-item active"><a class="nav-link" href="service.php">Services</a></li>
+                        <li class="nav-item"><a class="nav-link" href="service.php">Services</a></li>
                         <li class="nav-item"><a class="nav-link" href="portfolio.php">Portfolio</a></li>
-                        <li class="nav-item dropdown submenu">
+                        <li class="nav-item dropdown submenu active">
                             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                             Blog
                             </a>
                             <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
                                 <li class="nav-item"><a class="nav-link" href="blog.php">Blog</a></li>
                                 <li class="nav-item"><a class="nav-link" href="single-blog.php">Blog Details</a></li>
-                                <li class="nav-item"><a class="nav-link" href="elements.php">Elements</a></li>
+                                <li class="nav-item active"><a class="nav-link" href="elements.php">Elements</a></li>
                             </ul>
                         </li>
                         <li class="nav-item"><a class="nav-link" href="contact.php">Contact</a></li>
@@ -73,85 +73,137 @@
         <section class="banner_area">
             <div class="container">
                 <div class="banner_inner_text">
-                    <h2>Services</h2>
-                    <p>See what we do best</p>
+                    <h2>Elements</h2>
+                    <p>Get in touch</p>
                 </div>
             </div>
         </section>
         <!--================End Banner Area =================-->
         
-        <!--================End Banner Area =================-->
-        <section class="service_feature">
+        <!--================Buttons Area =================-->
+        <section class="buttons_area p_100">
             <div class="container">
-                <div class="row feature_inner">
-                    <div class="col-lg-4 col-sm-6">
-                        <div class="feature_item">
-                            <div class="f_icon">
-                                <img src="img/icon/f-icon-1.png" alt="">
+                <h3 class="elements_title">Buttons</h3>
+                <a class="more_btn" href="#">Discover</a>
+                <a class="solid_btn" href="#">Discover</a>
+                <button type="submit" value="submit" class="btn submit_btn form-control">Discover</button>
+            </div>
+        </section>
+        <!--================End Buttons Area =================-->
+        
+        <!--================Progress Bar Area =================-->
+        <section class="progress_bar_area">
+            <div class="container">
+                <h3 class="elements_title">Progress Bars & Accordions </h3>
+                <div class="row">
+                    <div class="col-lg-6">
+                        <div class="company_skill">
+                            <div class="our_skill_inner">
+                                <div class="single_skill">
+                                    <h3>Development</h3>
+                                    <div class="progress" data-value="70">
+                                        <div class="progress-bar">
+                                            <div class="progress_parcent"><span class="counter">70</span>%</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="single_skill">
+                                    <h3>Design</h3>
+                                    <div class="progress" data-value="90">
+                                        <div class="progress-bar">
+                                            <div class="progress_parcent"><span class="counter">90</span>%</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="single_skill">
+                                    <h3>SEO</h3>
+                                    <div class="progress" data-value="85">
+                                        <div class="progress-bar">
+                                            <div class="progress_parcent"><span class="counter">85</span>%</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="single_skill">
+                                    <h3>Development</h3>
+                                    <div class="progress" data-value="90">
+                                        <div class="progress-bar">
+                                            <div class="progress_parcent"><span class="counter">90</span>%</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="single_skill">
+                                    <h3>Management</h3>
+                                    <div class="progress" data-value="75">
+                                        <div class="progress-bar">
+                                            <div class="progress_parcent"><span class="counter">75</span>%</div>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
-                            <h4>Brand Identity</h4>
-                            <p>Etiam nec odio vestibulum est mattis effic iturut magna. Pellentesque sit am et tellus blandit. Etiam nec odio vestibul. </p>
-                            <a class="more_btn" href="#">Read More</a>
                         </div>
                     </div>
-                    <div class="col-lg-4 col-sm-6">
-                        <div class="feature_item">
-                            <div class="f_icon">
-                                <img src="img/icon/f-icon-2.png" alt="">
+                    <div class="col-lg-6">
+                        <div id="accordion" role="tablist" class="solution_collaps">
+                            <div class="card">
+                                <div class="card-header" role="tab" id="headingOne">
+                                    <h5 class="mb-0">
+                                        <a data-toggle="collapse" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                        Cras ex mauris, ornare eget pretium sit amet, dignissim et turpis
+                                        <i class="minus">-</i>
+                                        <i class="plus">+</i>
+                                        </a>
+                                    </h5>
+                                </div>
+
+                                <div id="collapseOne" class="collapse show" role="tabpanel" aria-labelledby="headingOne" data-parent="#accordion">
+                                    <div class="card-body">
+                                        <p>Etiam nec odio vestibulum est mattis effic iturut magna. Pellentesque sit am et tellus blandit. </p>
+                                    </div>
+                                </div>
                             </div>
-                            <h4>Online Marketing</h4>
-                            <p>Etiam nec odio vestibulum est mattis effic iturut magna. Pellentesque sit am et tellus blandit. Etiam nec odio vestibul. </p>
-                            <a class="more_btn" href="#">Read More</a>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-sm-6">
-                        <div class="feature_item">
-                            <div class="f_icon">
-                                <img src="img/icon/f-icon-3.png" alt="">
+                            <div class="card">
+                                <div class="card-header" role="tab" id="headingTwo">
+                                    <h5 class="mb-0">
+                                        <a class="collapsed" data-toggle="collapse" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                        Sed dapibus nunc vulputate mi fringilla, eu consequat
+                                        <i class="minus">-</i>
+                                        <i class="plus">+</i>
+                                        </a>
+                                    </h5>
+                                </div>
+                                <div id="collapseTwo" class="collapse" role="tabpanel" aria-labelledby="headingTwo" data-parent="#accordion">
+                                    <div class="card-body">
+                                        <p>Etiam nec odio vestibulum est mattis effic iturut magna. Pellentesque sit am et tellus blandit. </p>
+                                    </div>
+                                </div>
                             </div>
-                            <h4>Social Media</h4>
-                            <p>Etiam nec odio vestibulum est mattis effic iturut magna. Pellentesque sit am et tellus blandit. Etiam nec odio vestibul. </p>
-                            <a class="more_btn" href="#">Read More</a>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-sm-6">
-                        <div class="feature_item">
-                            <div class="f_icon">
-                                <img src="img/icon/f-icon-4.png" alt="">
+                            <div class="card">
+                                <div class="card-header" role="tab" id="headingThree">
+                                    <h5 class="mb-0">
+                                        <a class="collapsed" data-toggle="collapse" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                        Curabitur eu libero sed erat viverra gravida at id ex
+                                        <i class="minus">-</i>
+                                        <i class="plus">+</i>
+                                        </a>
+                                    </h5>
+                                </div>
+                                <div id="collapseThree" class="collapse" role="tabpanel" aria-labelledby="headingThree" data-parent="#accordion">
+                                    <div class="card-body">
+                                        <p>Etiam nec odio vestibulum est mattis effic iturut magna. Pellentesque sit am et tellus blandit. </p>
+                                    </div>
+                                </div>
                             </div>
-                            <h4>Video Support</h4>
-                            <p>Etiam nec odio vestibulum est mattis effic iturut magna. Pellentesque sit am et tellus blandit. Etiam nec odio vestibul. </p>
-                            <a class="more_btn" href="#">Read More</a>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-sm-6">
-                        <div class="feature_item">
-                            <div class="f_icon">
-                                <img src="img/icon/f-icon-5.png" alt="">
-                            </div>
-                            <h4>Fast Support</h4>
-                            <p>Etiam nec odio vestibulum est mattis effic iturut magna. Pellentesque sit am et tellus blandit. Etiam nec odio vestibul. </p>
-                            <a class="more_btn" href="#">Read More</a>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-sm-6">
-                        <div class="feature_item">
-                            <div class="f_icon">
-                                <img src="img/icon/f-icon-6.png" alt="">
-                            </div>
-                            <h4>Download test</h4>
-                            <p>Etiam nec odio vestibulum est mattis effic iturut magna. Pellentesque sit am et tellus blandit. Etiam nec odio vestibul. </p>
-                            <a class="more_btn" href="#">Read More</a>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
-        <!--================End Banner Area =================-->
+        <!--================End Progress Bar Area =================-->
         
         <!--================Circle Chart Area =================-->
         <section class="circle_chart_area">
             <div class="container">
+               <h3 class="elements_title">Loaders </h3>
                 <div class="row">
                     <div class="col-lg-3 col-sm-6">
                         <div class="circle_progress circular style-polygon" data-percentage="75" data-thickness="3" data-reverse="true" data-empty-fill="transparent" data-start-color="#987dff" data-end-color="#7acaff">
@@ -194,75 +246,79 @@
         </section>
         <!--================End Circle Chart Area =================-->
         
-        <!--================Service Solution Area =================-->
-        <section class="service_solution_area p_100">
+        <!--================Mileston Area =================-->
+        <section class="mileston_area">
             <div class="container">
-                <div class="row s_solution_inner">
-                    <div class="col-lg-6">
-                        <div class="s_solution_item">
-                            <div class="l_title">
-                                <img src="img/icon/title-icon.png" alt="">
-                                <h6>Discover the features</h6>
-                                <h2>Simple solutions for complicated times</h2>
-                            </div>
-                            <p>Etiam nec odio vestibulum est mattis effic iturut magna. Pellentesque sit am et tellus blandit. Etiam nec odio vestibul.Cras ex mauris, ornare eget pretium sit amet, dignissim et turpis. Nunc nec maximus dui, vel suscipit dolor. Donec elementum velit a orci facilisis rutrum. Nam convallis vel erat id dictum. Sed ut risus in orci convallis viverra a eget nisi. Aenean pellentesque elit vitae eros dignissim ultrices. </p>
-                            <div id="accordion" role="tablist" class="solution_collaps">
-                                <div class="card">
-                                    <div class="card-header" role="tab" id="headingOne">
-                                        <h5 class="mb-0">
-                                            <a data-toggle="collapse" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                                            Cras ex mauris, ornare eget pretium sit amet, dignissim et turpis
-                                            <i class="minus">-</i>
-                                            <i class="plus">+</i>
-                                            </a>
-                                        </h5>
-                                    </div>
-
-                                    <div id="collapseOne" class="collapse show" role="tabpanel" aria-labelledby="headingOne" data-parent="#accordion">
-                                        <div class="card-body">
-                                            <p>Etiam nec odio vestibulum est mattis effic iturut magna. Pellentesque sit am et tellus blandit. </p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="card">
-                                    <div class="card-header" role="tab" id="headingTwo">
-                                        <h5 class="mb-0">
-                                            <a class="collapsed" data-toggle="collapse" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                                            Sed dapibus nunc vulputate mi fringilla, eu consequat
-                                            <i class="minus">-</i>
-                                            <i class="plus">+</i>
-                                            </a>
-                                        </h5>
-                                    </div>
-                                    <div id="collapseTwo" class="collapse" role="tabpanel" aria-labelledby="headingTwo" data-parent="#accordion">
-                                        <div class="card-body">
-                                            <p>Etiam nec odio vestibulum est mattis effic iturut magna. Pellentesque sit am et tellus blandit. </p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="card">
-                                    <div class="card-header" role="tab" id="headingThree">
-                                        <h5 class="mb-0">
-                                            <a class="collapsed" data-toggle="collapse" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                                            Curabitur eu libero sed erat viverra gravida at id ex
-                                            <i class="minus">-</i>
-                                            <i class="plus">+</i>
-                                            </a>
-                                        </h5>
-                                    </div>
-                                    <div id="collapseThree" class="collapse" role="tabpanel" aria-labelledby="headingThree" data-parent="#accordion">
-                                        <div class="card-body">
-                                            <p>Etiam nec odio vestibulum est mattis effic iturut magna. Pellentesque sit am et tellus blandit. </p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
+                <h3 class="elements_title">Milestones</h3>
+                <div class="row">
+                    <div class="col-lg-3 col-sm-6">
+                        <div class="mileston_item">
+                            <h4><span class="counter">25</span>K</h4>
+                            <h5>Followers</h5>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-sm-6">
+                        <div class="mileston_item">
+                            <h4><span class="counter">130</span></h4>
+                            <h5>Clients</h5>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-sm-6">
+                        <div class="mileston_item">
+                            <h4><span class="counter">238</span></h4>
+                            <h5>Projects</h5>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-sm-6">
+                        <div class="mileston_item">
+                            <h4><span class="counter">12</span></h4>
+                            <h5>Years of experience</h5>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
-        <!--================End Service Solution Area =================-->
+        <!--================End Mileston Area =================-->
+        
+        <!--================End Banner Area =================-->
+        <section class="service_feature element_service">
+            <div class="container">
+                <h3 class="elements_title">Icon boxes </h3>
+                <div class="row feature_inner">
+                    <div class="col-lg-4 col-md-6">
+                        <div class="feature_item">
+                            <div class="f_icon">
+                                <img src="img/icon/f-icon-4.png" alt="">
+                            </div>
+                            <h4>Video Support</h4>
+                            <p>Etiam nec odio vestibulum est mattis effic iturut magna. Pellentesque sit am et tellus blandit. Etiam nec odio vestibul. </p>
+                            <a class="more_btn" href="#">Read More</a>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <div class="feature_item">
+                            <div class="f_icon">
+                                <img src="img/icon/f-icon-5.png" alt="">
+                            </div>
+                            <h4>Fast Support</h4>
+                            <p>Etiam nec odio vestibulum est mattis effic iturut magna. Pellentesque sit am et tellus blandit. Etiam nec odio vestibul. </p>
+                            <a class="more_btn" href="#">Read More</a>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <div class="feature_item">
+                            <div class="f_icon">
+                                <img src="img/icon/f-icon-6.png" alt="">
+                            </div>
+                            <h4>Download test</h4>
+                            <p>Etiam nec odio vestibulum est mattis effic iturut magna. Pellentesque sit am et tellus blandit. Etiam nec odio vestibul. </p>
+                            <a class="more_btn" href="#">Read More</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--================End Banner Area =================-->
         
         <!--================Footer Area =================-->
         <footer class="footr_area">
@@ -357,6 +413,12 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
         <script src="js/smoothscroll.js"></script>
         <script src="vendors/circle-bar/circle-progress.min.js"></script>
         <script src="vendors/circle-bar/plugins.js"></script>
+        <script src="vendors/isotope/imagesloaded.pkgd.min.js"></script>
+        <script src="vendors/isotope/isotope.pkgd.min.js"></script>
+        
+        <!--gmaps Js-->
+        <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCjCGmQ0Uq4exrzdcL6rvxywDDOvfAu6eE"></script>
+        <script src="js/gmaps.min.js"></script>
         
         <script src="js/circle-active.js"></script>
         <script src="js/theme.js"></script>
