@@ -1,8 +1,11 @@
-<?php 
+<?php
 include 'library/config.lib.php';
 include 'library/db.lib.php';
 include 'library/functions.lib.php';
 ?>
+
+
+
 
 <!DOCTYPE html>
 <html lang="en">
@@ -13,7 +16,7 @@ include 'library/functions.lib.php';
         
         <link rel="icon" href="img/fav-icon.png" type="image/x-icon" />
         <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-        <title>Sierra</title>
+        <title>Petiot</title>
 
         <!-- Icon css link -->
         <link href="css/font-awesome.min.css" rel="stylesheet">
@@ -41,36 +44,7 @@ include 'library/functions.lib.php';
     <body>
         
         <!--================Header Menu Area =================-->
-        <header class="main_menu_area">
-            <nav class="navbar navbar-expand-lg navbar-light bg-light">
-                <a class="navbar-brand" href="#"><img src="img/logo.png" alt=""></a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                </button>
-
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav">
-                        <li class="nav-item active"><a class="nav-link" href="index.php">Home</a></li>
-                        <li class="nav-item"><a class="nav-link" href="about-us.php">About Us</a></li>
-                        <li class="nav-item"><a class="nav-link" href="service.php">Services</a></li>
-                        <li class="nav-item"><a class="nav-link" href="portfolio.php">Portfolio</a></li>
-                        <li class="nav-item dropdown submenu">
-                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            Blog
-                            </a>
-                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                <li class="nav-item"><a class="nav-link" href="blog.php">Blog</a></li>
-                                <li class="nav-item"><a class="nav-link" href="single-blog.php">Blog Details</a></li>
-                                <li class="nav-item"><a class="nav-link" href="elements.php">Elements</a></li>
-                            </ul>
-                        </li>
-                        <li class="nav-item"><a class="nav-link" href="contact.php">Contact</a></li>
-                    </ul>
-                </div>
-            </nav>
-        </header>
+            <?php include 'include/header.inc.php' ?>
         <!--================End Header Menu Area =================-->
         
         
@@ -78,17 +52,7 @@ include 'library/functions.lib.php';
         <section class="main_slider_area">
             <div id="main_slider" class="rev_slider" data-version="5.3.1.6">
                 <ul>
-                <?php 
-        $sql = "SELECT * FROM feeder WHERE estado = 1";
-
-        $res = my_query($sql);
-        //pr($res);
-        $size = sizeof($res);
-        for($i=0; $i<$size; $i++) {
-          
-        ?>
-       
-       <li data-index="rs-1587" data-transition="fade" data-slotamount="default" data-hideafterloop="0" data-hideslideonmobile="off"  data-easein="default" data-easeout="default" data-masterspeed="300" data-rotate="0"  data-saveperformance="off"  data-title="Creative" data-param1="01" data-param2="" data-param3="" data-param4="" data-param5="" data-param6="" data-param7="" data-param8="" data-param9="" data-param10="" data-description="">
+                    <li data-index="rs-1587" data-transition="fade" data-slotamount="default" data-hideafterloop="0" data-hideslideonmobile="off"  data-easein="default" data-easeout="default" data-masterspeed="300" data-rotate="0"  data-saveperformance="off"  data-title="Creative" data-param1="01" data-param2="" data-param3="" data-param4="" data-param5="" data-param6="" data-param7="" data-param8="" data-param9="" data-param10="" data-description="">
                         <!-- LAYER NR. 1 -->
                         <div class="slider_text_box">
                             <div class="tp-caption tp-resizeme first_text" 
@@ -104,7 +68,7 @@ include 'library/functions.lib.php';
                             data-type="text" 
                             data-responsive_offset="on" 
                             data-frames="[{&quot;delay&quot;:10,&quot;speed&quot;:1500,&quot;frame&quot;:&quot;0&quot;,&quot;from&quot;:&quot;y:[-100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;&quot;,&quot;mask&quot;:&quot;x:0px;y:0px;s:inherit;e:inherit;&quot;,&quot;to&quot;:&quot;o:1;&quot;,&quot;ease&quot;:&quot;Power2.easeInOut&quot;},{&quot;delay&quot;:&quot;wait&quot;,&quot;speed&quot;:1500,&quot;frame&quot;:&quot;999&quot;,&quot;to&quot;:&quot;y:[175%];&quot;,&quot;mask&quot;:&quot;x:inherit;y:inherit;s:inherit;e:inherit;&quot;,&quot;ease&quot;:&quot;Power2.easeInOut&quot;}]"
-                            data-textAlign="['left','left','left','left','left','center']"><?php echo $res[$i]['titulo1'] ?> <br/><?php echo $res[$i]['titulo2'] ?></div>
+                            data-textAlign="['left','left','left','left','left','center']">Petiot <br />Alimenta de forma inteligente</div>
                             
                             <div class="tp-caption tp-resizeme secand_text" 
                                 data-x="['left','left','left','left','15','center']" 
@@ -120,7 +84,7 @@ include 'library/functions.lib.php';
                                 data-responsive_offset="on"
                                 data-transform_idle="o:1;"
                                 data-frames="[{&quot;delay&quot;:10,&quot;speed&quot;:1500,&quot;frame&quot;:&quot;0&quot;,&quot;from&quot;:&quot;y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;opacity:0;&quot;,&quot;mask&quot;:&quot;x:0px;y:[100%];s:inherit;e:inherit;&quot;,&quot;to&quot;:&quot;o:1;&quot;,&quot;ease&quot;:&quot;Power2.easeInOut&quot;},{&quot;delay&quot;:&quot;wait&quot;,&quot;speed&quot;:1500,&quot;frame&quot;:&quot;999&quot;,&quot;to&quot;:&quot;y:[175%];&quot;,&quot;mask&quot;:&quot;x:inherit;y:inherit;s:inherit;e:inherit;&quot;,&quot;ease&quot;:&quot;Power2.easeInOut&quot;}]"
-                                data-textAlign="['left','left','left','left','left','center']"><?php echo $res[$i]['texto'] ?>
+                                data-textAlign="['left','left','left','left','left','center']">Descubra já como!
                             </div>
                             
                             <div class="tp-caption tp-resizeme" 
@@ -135,7 +99,7 @@ include 'library/functions.lib.php';
                                 data-type="text" 
                                 data-responsive_offset="on" 
                                 data-frames="[{&quot;delay&quot;:10,&quot;speed&quot;:1500,&quot;frame&quot;:&quot;0&quot;,&quot;from&quot;:&quot;y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;opacity:0;&quot;,&quot;mask&quot;:&quot;x:0px;y:[100%];s:inherit;e:inherit;&quot;,&quot;to&quot;:&quot;o:1;&quot;,&quot;ease&quot;:&quot;Power2.easeInOut&quot;},{&quot;delay&quot;:&quot;wait&quot;,&quot;speed&quot;:1500,&quot;frame&quot;:&quot;999&quot;,&quot;to&quot;:&quot;y:[175%];&quot;,&quot;mask&quot;:&quot;x:inherit;y:inherit;s:inherit;e:inherit;&quot;,&quot;ease&quot;:&quot;Power2.easeInOut&quot;}]">
-                                <a class="more_btn" href="#"><?php echo $res[$i]['texto_botao'] ?></a>
+                                <a class="more_btn" href="#">Discover</a>
                             </div>
                             <div class="tp-caption tp-resizeme single_img" 
                             data-x="['right','right','right','right','right','right']" 
@@ -151,14 +115,150 @@ include 'library/functions.lib.php';
                             data-responsive_offset="on" 
                             data-frames="[{&quot;delay&quot;:10,&quot;speed&quot;:1500,&quot;frame&quot;:&quot;0&quot;,&quot;from&quot;:&quot;y:[-100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;&quot;,&quot;mask&quot;:&quot;x:0px;y:0px;s:inherit;e:inherit;&quot;,&quot;to&quot;:&quot;o:1;&quot;,&quot;ease&quot;:&quot;Power2.easeInOut&quot;},{&quot;delay&quot;:&quot;wait&quot;,&quot;speed&quot;:1500,&quot;frame&quot;:&quot;999&quot;,&quot;to&quot;:&quot;y:[175%];&quot;,&quot;mask&quot;:&quot;x:inherit;y:inherit;s:inherit;e:inherit;&quot;,&quot;ease&quot;:&quot;Power2.easeInOut&quot;}]"
                             data-textAlign="['left','left','left','left','left','center']">
-                                <img src="img/<?php echo $res[$i]['imagem'] ?>" alt="">
+                                <img src="img/home-slider/slider-m-1.png" alt="">
                             </div>
                         </div>
                     </li>
-          <?php
-    }
-    ?>
-                    
+                    <li data-index="rs-1588" data-transition="fade" data-slotamount="default" data-hideafterloop="0" data-hideslideonmobile="off"  data-easein="default" data-easeout="default" data-masterspeed="300" data-rotate="0"  data-saveperformance="off"  data-title="Creative" data-param1="01" data-param2="" data-param3="" data-param4="" data-param5="" data-param6="" data-param7="" data-param8="" data-param9="" data-param10="" data-description="">
+                    <!-- LAYERS -->
+                        <!-- LAYERS -->
+
+                        <!-- LAYER NR. 1 -->
+                        <div class="slider_text_box">
+                            <div class="tp-caption tp-resizeme first_text" 
+                            data-x="['left','left','left','left','15','center']" 
+                            data-hoffset="['0','80','80','0']" 
+                            data-y="['top','top','top','top']" 
+                            data-voffset="['400','400','400','250','180','180']" 
+                            data-fontsize="['72','72','72','50','50','30']"
+                            data-lineheight="['82','82','82','62','62','42']"
+                            data-width="['none']"
+                            data-height="none"
+                            data-whitespace="nowrape"
+                            data-type="text" 
+                            data-responsive_offset="on" 
+                            data-frames="[{&quot;delay&quot;:10,&quot;speed&quot;:1500,&quot;frame&quot;:&quot;0&quot;,&quot;from&quot;:&quot;y:[-100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;&quot;,&quot;mask&quot;:&quot;x:0px;y:0px;s:inherit;e:inherit;&quot;,&quot;to&quot;:&quot;o:1;&quot;,&quot;ease&quot;:&quot;Power2.easeInOut&quot;},{&quot;delay&quot;:&quot;wait&quot;,&quot;speed&quot;:1500,&quot;frame&quot;:&quot;999&quot;,&quot;to&quot;:&quot;y:[175%];&quot;,&quot;mask&quot;:&quot;x:inherit;y:inherit;s:inherit;e:inherit;&quot;,&quot;ease&quot;:&quot;Power2.easeInOut&quot;}]"
+                            data-textAlign="['left','left','left','left','left','center']">Choose a powerful <br />design for your Start-up</div>
+                            
+                            <div class="tp-caption tp-resizeme secand_text" 
+                                data-x="['left','left','left','left','15','center']" 
+                                data-hoffset="['0','80','80','0']" 
+                                data-y="['top','top','top','top']" 
+                                data-voffset="['575','575','575','400','320','300']"  
+                                data-fontsize="['24','24','24','18','16','16']"
+                                data-lineheight="['36','36','36','26','26','26']"
+                                data-width="['none','none','none','none','none']"
+                                data-height="none"
+                                data-whitespace="nowrape"
+                                data-type="text" 
+                                data-responsive_offset="on"
+                                data-transform_idle="o:1;"
+                                data-frames="[{&quot;delay&quot;:10,&quot;speed&quot;:1500,&quot;frame&quot;:&quot;0&quot;,&quot;from&quot;:&quot;y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;opacity:0;&quot;,&quot;mask&quot;:&quot;x:0px;y:[100%];s:inherit;e:inherit;&quot;,&quot;to&quot;:&quot;o:1;&quot;,&quot;ease&quot;:&quot;Power2.easeInOut&quot;},{&quot;delay&quot;:&quot;wait&quot;,&quot;speed&quot;:1500,&quot;frame&quot;:&quot;999&quot;,&quot;to&quot;:&quot;y:[175%];&quot;,&quot;mask&quot;:&quot;x:inherit;y:inherit;s:inherit;e:inherit;&quot;,&quot;ease&quot;:&quot;Power2.easeInOut&quot;}]"
+                                data-textAlign="['left','left','left','left','left','center']">Get your freebie template now!
+                            </div>
+                            
+                            <div class="tp-caption tp-resizeme" 
+                                data-x="['left','left','left','left','15','center']" data-hoffset="['0','80','80','0']" 
+                                data-y="['top','top','top','top']" 
+                                data-voffset="['670','670','670','480','370','350']" 
+                                data-fontsize="['14','14','14','14']"
+                                data-lineheight="['46','46','46','46']"
+                                data-width="none"
+                                data-height="none"
+                                data-whitespace="nowrap"
+                                data-type="text" 
+                                data-responsive_offset="on" 
+                                data-frames="[{&quot;delay&quot;:10,&quot;speed&quot;:1500,&quot;frame&quot;:&quot;0&quot;,&quot;from&quot;:&quot;y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;opacity:0;&quot;,&quot;mask&quot;:&quot;x:0px;y:[100%];s:inherit;e:inherit;&quot;,&quot;to&quot;:&quot;o:1;&quot;,&quot;ease&quot;:&quot;Power2.easeInOut&quot;},{&quot;delay&quot;:&quot;wait&quot;,&quot;speed&quot;:1500,&quot;frame&quot;:&quot;999&quot;,&quot;to&quot;:&quot;y:[175%];&quot;,&quot;mask&quot;:&quot;x:inherit;y:inherit;s:inherit;e:inherit;&quot;,&quot;ease&quot;:&quot;Power2.easeInOut&quot;}]">
+                                <a class="more_btn" href="#">Discover</a>
+                            </div>
+                            <div class="tp-caption tp-resizeme single_img" 
+                            data-x="['right','right','right','right','right','right']" 
+                            data-hoffset="['0','0','0','0']" 
+                            data-y="['top','top','top','top']" 
+                            data-voffset="['180','180','180','180','0']" 
+                            data-fontsize="['65','65','60','40','25']"
+                            data-lineheight="['75','75','75','50','35']"
+                            data-width="['485','485','485','485','485']"
+                            data-height="none"
+                            data-whitespace="normal"
+                            data-type="text" 
+                            data-responsive_offset="on" 
+                            data-frames="[{&quot;delay&quot;:10,&quot;speed&quot;:1500,&quot;frame&quot;:&quot;0&quot;,&quot;from&quot;:&quot;y:[-100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;&quot;,&quot;mask&quot;:&quot;x:0px;y:0px;s:inherit;e:inherit;&quot;,&quot;to&quot;:&quot;o:1;&quot;,&quot;ease&quot;:&quot;Power2.easeInOut&quot;},{&quot;delay&quot;:&quot;wait&quot;,&quot;speed&quot;:1500,&quot;frame&quot;:&quot;999&quot;,&quot;to&quot;:&quot;y:[175%];&quot;,&quot;mask&quot;:&quot;x:inherit;y:inherit;s:inherit;e:inherit;&quot;,&quot;ease&quot;:&quot;Power2.easeInOut&quot;}]"
+                            data-textAlign="['left','left','left','left','left','center']">
+                                <img src="img/home-slider/slider-m-1.png" alt="">
+                            </div>
+                        </div>
+                    </li>
+                    <li data-index="rs-1589" data-transition="fade" data-slotamount="default" data-hideafterloop="0" data-hideslideonmobile="off"  data-easein="default" data-easeout="default" data-masterspeed="300" data-rotate="0"  data-saveperformance="off"  data-title="Creative" data-param1="01" data-param2="" data-param3="" data-param4="" data-param5="" data-param6="" data-param7="" data-param8="" data-param9="" data-param10="" data-description="">
+                    <!-- LAYERS -->
+                        <!-- LAYERS -->
+
+                        <!-- LAYER NR. 1 -->
+                        <div class="slider_text_box">
+                            <div class="tp-caption tp-resizeme first_text" 
+                            data-x="['left','left','left','left','15','center']" 
+                            data-hoffset="['0','80','80','0']" 
+                            data-y="['top','top','top','top']" 
+                            data-voffset="['400','400','400','250','180','180']" 
+                            data-fontsize="['72','72','72','50','50','30']"
+                            data-lineheight="['82','82','82','62','62','42']"
+                            data-width="['none']"
+                            data-height="none"
+                            data-whitespace="nowrape"
+                            data-type="text" 
+                            data-responsive_offset="on" 
+                            data-frames="[{&quot;delay&quot;:10,&quot;speed&quot;:1500,&quot;frame&quot;:&quot;0&quot;,&quot;from&quot;:&quot;y:[-100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;&quot;,&quot;mask&quot;:&quot;x:0px;y:0px;s:inherit;e:inherit;&quot;,&quot;to&quot;:&quot;o:1;&quot;,&quot;ease&quot;:&quot;Power2.easeInOut&quot;},{&quot;delay&quot;:&quot;wait&quot;,&quot;speed&quot;:1500,&quot;frame&quot;:&quot;999&quot;,&quot;to&quot;:&quot;y:[175%];&quot;,&quot;mask&quot;:&quot;x:inherit;y:inherit;s:inherit;e:inherit;&quot;,&quot;ease&quot;:&quot;Power2.easeInOut&quot;}]"
+                            data-textAlign="['left','left','left','left','left','center']">Choose a powerful <br />design for your Start-up</div>
+                            
+                            <div class="tp-caption tp-resizeme secand_text" 
+                                data-x="['left','left','left','left','15','center']" 
+                                data-hoffset="['0','80','80','0']" 
+                                data-y="['top','top','top','top']" 
+                                data-voffset="['575','575','575','400','320','300']"  
+                                data-fontsize="['24','24','24','18','16','16']"
+                                data-lineheight="['36','36','36','26','26','26']"
+                                data-width="['none','none','none','none','none']"
+                                data-height="none"
+                                data-whitespace="nowrape"
+                                data-type="text" 
+                                data-responsive_offset="on"
+                                data-transform_idle="o:1;"
+                                data-frames="[{&quot;delay&quot;:10,&quot;speed&quot;:1500,&quot;frame&quot;:&quot;0&quot;,&quot;from&quot;:&quot;y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;opacity:0;&quot;,&quot;mask&quot;:&quot;x:0px;y:[100%];s:inherit;e:inherit;&quot;,&quot;to&quot;:&quot;o:1;&quot;,&quot;ease&quot;:&quot;Power2.easeInOut&quot;},{&quot;delay&quot;:&quot;wait&quot;,&quot;speed&quot;:1500,&quot;frame&quot;:&quot;999&quot;,&quot;to&quot;:&quot;y:[175%];&quot;,&quot;mask&quot;:&quot;x:inherit;y:inherit;s:inherit;e:inherit;&quot;,&quot;ease&quot;:&quot;Power2.easeInOut&quot;}]"
+                                data-textAlign="['left','left','left','left','left','center']">Get your freebie template now!
+                            </div>
+                            
+                            <div class="tp-caption tp-resizeme" 
+                                data-x="['left','left','left','left','15','center']" data-hoffset="['0','80','80','0']" 
+                                data-y="['top','top','top','top']" 
+                                data-voffset="['670','670','670','480','370','350']" 
+                                data-fontsize="['14','14','14','14']"
+                                data-lineheight="['46','46','46','46']"
+                                data-width="none"
+                                data-height="none"
+                                data-whitespace="nowrap"
+                                data-type="text" 
+                                data-responsive_offset="on" 
+                                data-frames="[{&quot;delay&quot;:10,&quot;speed&quot;:1500,&quot;frame&quot;:&quot;0&quot;,&quot;from&quot;:&quot;y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;opacity:0;&quot;,&quot;mask&quot;:&quot;x:0px;y:[100%];s:inherit;e:inherit;&quot;,&quot;to&quot;:&quot;o:1;&quot;,&quot;ease&quot;:&quot;Power2.easeInOut&quot;},{&quot;delay&quot;:&quot;wait&quot;,&quot;speed&quot;:1500,&quot;frame&quot;:&quot;999&quot;,&quot;to&quot;:&quot;y:[175%];&quot;,&quot;mask&quot;:&quot;x:inherit;y:inherit;s:inherit;e:inherit;&quot;,&quot;ease&quot;:&quot;Power2.easeInOut&quot;}]">
+                                <a class="more_btn" href="#">Discover</a>
+                            </div>
+                            <div class="tp-caption tp-resizeme single_img" 
+                            data-x="['right','right','right','right','right','right']" 
+                            data-hoffset="['0','0','0','0']" 
+                            data-y="['top','top','top','top']" 
+                            data-voffset="['180','180','180','180','0']" 
+                            data-fontsize="['65','65','60','40','25']"
+                            data-lineheight="['75','75','75','50','35']"
+                            data-width="['485','485','485','485','485']"
+                            data-height="none"
+                            data-whitespace="normal"
+                            data-type="text" 
+                            data-responsive_offset="on" 
+                            data-frames="[{&quot;delay&quot;:10,&quot;speed&quot;:1500,&quot;frame&quot;:&quot;0&quot;,&quot;from&quot;:&quot;y:[-100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;&quot;,&quot;mask&quot;:&quot;x:0px;y:0px;s:inherit;e:inherit;&quot;,&quot;to&quot;:&quot;o:1;&quot;,&quot;ease&quot;:&quot;Power2.easeInOut&quot;},{&quot;delay&quot;:&quot;wait&quot;,&quot;speed&quot;:1500,&quot;frame&quot;:&quot;999&quot;,&quot;to&quot;:&quot;y:[175%];&quot;,&quot;mask&quot;:&quot;x:inherit;y:inherit;s:inherit;e:inherit;&quot;,&quot;ease&quot;:&quot;Power2.easeInOut&quot;}]"
+                            data-textAlign="['left','left','left','left','left','center']">
+                                <img src="img/home-slider/slider-m-1.png" alt="">
+                            </div>
+                        </div>
+                    </li>
                 </ul>
             </div>
         </section>
@@ -419,7 +519,9 @@ include 'library/functions.lib.php';
             <div class="footer_copyright">
                 <div class="container">
                     <div class="float-sm-left">
-                    
+                        <h5><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="fa fa-heart-o" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
+<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></h5>
                     </div>
                     <div class="float-sm-right">
                         <ul>
