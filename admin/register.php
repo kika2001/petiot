@@ -20,10 +20,13 @@
             <!-- <img src="images/signup-bg.jpg" alt=""> -->
             <div class="container">
                 <div class="signup-content">
-                    <form method="POST" id="signup-form" class="signup-form" action="trataregisto.php">
+                    <form method="POST" id="signup-form" class="signup-form" action="trataregistar.php">
                         <h2 class="form-title">Criar a conta</h2>
                         <div class="form-group">
                             <input type="text" class="form-input" name="name" id="name" placeholder="Nome Completo"/>
+                        </div>
+                        <div class="form-group">
+                            <input type="text" class="form-input" name="username" id="username" placeholder="Username"/>
                         </div>
                         <div class="form-group">
                             <input type="email" class="form-input" name="email" id="email" placeholder="Email"/>
@@ -36,7 +39,7 @@
                             <input type="password" class="form-input" name="re_password" id="re_password" placeholder="Repita a palavra-passe"/>
                         </div>
                         <div class="form-group">
-                            <input type="checkbox" name="agree-term" id="agree-term" class="agree-term" />
+                            <input type="checkbox" value ="1" name="agree-term" id="agree-term" class="agree-term" />
                             <label for="agree-term" class="label-agree-term"><span><span></span></span>Eu concordo com todos os <a href="#" class="term-service">Termos de Serviço</a></label>
                         </div>
                         <div class="form-group">
