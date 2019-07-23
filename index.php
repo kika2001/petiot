@@ -109,11 +109,11 @@ include 'library/functions.lib.php';
         <!--================End Team People Area =================-->
         
         <!--================Get in Touch Area =================-->
-        <?php include 'include/email.inc.php'; ?>
+                <?php /*include 'include/email.inc.php';*/ ?> 
         <!--================End Get in Touch Area =================-->
         
         <!--================Map Area =================-->
-        <section class="world_map_area p_100">
+        <!--<section class="world_map_area p_100">
             <div class="container">
                 <div class="world_map_inner">
                     <img class="img-fluid" src="img/world-map.png" alt="">
@@ -124,7 +124,7 @@ include 'library/functions.lib.php';
                     </div>
                 </div>
             </div>
-        </section>
+        </section> -->
         <!--================End Map Area =================-->
         
         <!--================Footer Area =================-->
