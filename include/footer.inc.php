@@ -1,5 +1,5 @@
 <?php 
-                $query = "SELECT * FROM company WHERE estado = 1 ";
+                $query = "SELECT * FROM footer WHERE estado = 1 ";
                 $res = my_query($query);
                 $size = sizeof($res);
 
