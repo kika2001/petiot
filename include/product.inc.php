@@ -7,13 +7,13 @@
 
                     <div class="text_3d">
                         <div class="l_title">
-                            <img src="img/icon/title-icon.png" alt="">
-                            <h6>Discover the features</h6>
-                            <h2>We don’t hide, we stand tall in front of chalenge</h2>
+                            <img src="<?php echo $res[$i]['icon'] ?>" alt="">
+                            <h6><?php echo $res[$i]['titulo'] ?></h6>
+                            <h2><?php echo $res[$i]['sub_titulo'] ?></h2>
                         </div>
-                        <p>Etiam nec odio vestibulum est mattis effic iturut magna. Pellentesque sit am et tellus blandit. Etiam nec odio vestibul.Cras ex mauris, ornare eget pretium sit amet, dignissim et turpis. Nunc nec maximus dui, vel suscipit dolor. Donec elementum velit a orci facilisis rutrum. Nam convallis vel erat id dictum. Sed ut risus in orci convallis viverra a eget nisi. Aenean pellentesque elit vitae eros dignissim ultrices. </p>
+                        <p><?php echo $res[$i]['texto'] ?></p>
                     </div>
                     <div class="shap_mobile">
-                        <img src="img/iphone4.png" alt="">
+                        <img src="<?php echo $res[$i]['imagem'] ?>" alt="">
                     </div>
                     <?php }?>

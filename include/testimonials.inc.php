@@ -7,13 +7,13 @@
                     
                     
                     <div class="item">
-                        <h4>“They are the best”</h4>
-                        <p>Etiam nec odio vestibulum est mattis effic iturut magna. Pellentesque sit am et tellus blandit. Etiam nec odio vestibul. Etiam nec odio vestibulum est mattis effic iturut magna. Pellentesque sit am et tellus.</p>
+                        <h4>“<?php echo $res[$i]['titulo'] ?>”</h4>
+                        <p><?php echo $res[$i]['texto'] ?></p>
                         <div class="media">
-                            <img src="img/team/people/people-5.jpg" alt="">
+                            <img src="<?php echo $res[$i]['imagem'] ?>" alt="">
                             <div class="media-body">
-                                <h5>Chriss Turner</h5>
-                                <h6>CEO Enterprise</h6>
+                                <h5><?php echo $res[$i]['nome'] ?></h5>
+                                <h6><?php echo $res[$i]['cargo'] ?></h6>
                             </div>
                         </div>
                     </div>
