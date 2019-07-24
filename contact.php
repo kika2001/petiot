@@ -1,5 +1,10 @@
 
 <?php
+$url = $_SERVER['SERVER_NAME'];
+if(!isset($_GET['linguas'])) {
+  header('Location: '.$_SERVER[REQUEST_URI].'?linguas=pt');
+  exit();
+} 
 include 'library/config.lib.php';
 include 'library/db.lib.php';
 include 'library/functions.lib.php';
