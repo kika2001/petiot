@@ -5,6 +5,7 @@ if(!isset($_GET['linguas'])) {
   header('Location: '.$_SERVER[REQUEST_URI].'?linguas=pt');
   exit();
 } 
+
 include 'library/config.lib.php';
 include 'library/db.lib.php';
 include 'library/functions.lib.php';
@@ -51,18 +52,11 @@ include 'library/functions.lib.php';
     <body>
         
         <!--================Header Menu Area =================-->
-        <?php include 'include/header.inc.php' ?>
+        <?php include 'include/header.inc.php'?>
         <!--================End Header Menu Area =================-->
         
         <!--================Banner Area =================-->
-        <section class="banner_area">
-            <div class="container">
-                <div class="banner_inner_text">
-                    <h2>Contact</h2>
-                    <p>Get in touch</p>
-                </div>
-            </div>
-        </section>
+        <?php include 'include/banner_area_contact.inc.php'?>
         <!--================End Banner Area =================-->
         
         <!--================Get in Touch Area =================-->
@@ -106,7 +100,7 @@ include 'library/functions.lib.php';
         <!--================End Get in Touch Area =================-->
         
         <!--================Map Area =================-->
-        <section class="contact_map_area">
+       <!-- <section class="contact_map_area">
             <div id="mapBox1" class="mapBox1 row m0" 
                 data-lat="40.701083" 
                 data-lon="-74.1522848" 
@@ -127,7 +121,7 @@ include 'library/functions.lib.php';
                     </div>
                 </div>
             </div>
-        </section>
+        </section>-->
         <!--================End Map Area =================-->
         
         <!--================Footer Area =================-->
