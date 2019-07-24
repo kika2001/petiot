@@ -52,7 +52,7 @@ include 'library/functions.lib.php';
             <div class="container">
                 <div class="banner_inner_text">
                     <h2>Blog</h2>
-                    <p>Read the news</p>
+                    <p>Leia as notícias</p>
                 </div>
             </div>
         </section>
@@ -64,62 +64,13 @@ include 'library/functions.lib.php';
                 <div class="row">
                     <div class="col-lg-9">
                         <div class="blog_main_inner">
-                            <div class="blog_main_item">
-                                <div class="blog_img">
-                                    <img class="img-fluid" src="img/blog/blog-1.jpg" alt="">
-                                    <div class="blog_date">
-                                        <h4>29</h4>
-                                        <h5>October, 2017</h5>
-                                    </div>
-                                </div>
-                                <div class="blog_text">
-                                    <a href="#"><h4>Let us introduce you the best apps</h4></a>
-                                    <div class="blog_author">
-                                        <a href="#">By Lore Papp-Dinea</a>
-                                        <a href="#">Design</a>
-                                    </div>
-                                    <p>Etiam nec odio vestibulum est mattis effic iturut magna. Pellentesque sit am et tellus blandit. Etiam nec odio vestibul. Etiam nec odio vestibulum est mattis effic iturut magna. Pellentesque sit am et tellus blandit. Etiam nec odio vestibul. </p>
-                                    <a class="more_btn" href="#">Read More</a>
-                                </div>
-                            </div>
-                            <div class="blog_main_item">
-                                <div class="blog_img">
-                                    <img class="img-fluid" src="img/blog/blog-2.jpg" alt="">
-                                    <div class="blog_date">
-                                        <h4>29</h4>
-                                        <h5>October, 2017</h5>
-                                    </div>
-                                </div>
-                                <div class="blog_text">
-                                    <a href="#"><h4>Let us introduce you the best apps</h4></a>
-                                    <div class="blog_author">
-                                        <a href="#">By Lore Papp-Dinea</a>
-                                        <a href="#">Design</a>
-                                    </div>
-                                    <p>Etiam nec odio vestibulum est mattis effic iturut magna. Pellentesque sit am et tellus blandit. Etiam nec odio vestibul. Etiam nec odio vestibulum est mattis effic iturut magna. Pellentesque sit am et tellus blandit. Etiam nec odio vestibul. </p>
-                                    <a class="more_btn" href="#">Read More</a>
-                                </div>
-                            </div>
-                            <div class="blog_main_item">
-                                <div class="blog_img">
-                                    <img class="img-fluid" src="img/blog/blog-3.jpg" alt="">
-                                    <div class="blog_date">
-                                        <h4>29</h4>
-                                        <h5>October, 2017</h5>
-                                    </div>
-                                </div>
-                                <div class="blog_text">
-                                    <a href="#"><h4>Let us introduce you the best apps</h4></a>
-                                    <div class="blog_author">
-                                        <a href="#">By Lore Papp-Dinea</a>
-                                        <a href="#">Design</a>
-                                    </div>
-                                    <p>Etiam nec odio vestibulum est mattis effic iturut magna. Pellentesque sit am et tellus blandit. Etiam nec odio vestibul. Etiam nec odio vestibulum est mattis effic iturut magna. Pellentesque sit am et tellus blandit. Etiam nec odio vestibul. </p>
-                                    <a class="more_btn" href="#">Read More</a>
-                                </div>
-                            </div>
+
+                    <?php include 'include/blog_page.inc.php' ?>
+
+
                         </div>
                     </div>
+                    
                     <div class="col-lg-3">
                         <div class="blog_right_sidebar">
                             <aside class="r_widget search_widget">
