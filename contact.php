@@ -126,7 +126,7 @@ include 'library/functions.lib.php';
         <!--================End Map Area =================-->
         
         <!--================Footer Area =================-->
-        <?php include 'include/footer' ?>
+        <?php include 'include/footer.inc.php' ?>
         <!--================End Footer Area =================-->
         
         
