@@ -20,10 +20,26 @@ include '../../library/functions.inc.php';
 			}		
 		}
 	}
-	if (!isset($_POST['estado'])) {
-		$_POST['estado'] = 0;
-	}
 
+	if ($_FILES['icon']['error'] != 4) {
+		$path = $_FILES['icon']['name'];
+		$ext = pathinfo($path, PATHINFO_EXTENSION);
+
+		$nomeclean = clean($_POST['icon']);
+		$file_name = $nomeclean."_".$_POST['id'].".".$ext;
+		$file_tmp = $_FILES['icon']['tmp_name'];
+
+		$upload_folder = "../../images/";
+		$movefile = move_uploaded_file($file_tmp, $upload_folder .$file_name);
+		$_POST['icon'] = $file_name;
+
+		if ($movefile) {
+			echo "Sucesso";
+		}
+		else {
+			echo "Erro";
+		}
+	}
 	
 	$query = "INSERT INTO ".$arrcampos['tabela']." (";
 	$i=0;

@@ -1,10 +1,9 @@
 <?php
-
-include '../../library/config.lib.php';
-include '../../library/functions.lib.php';
 include '../../library/db.lib.php';
-include 'data.ini.php';
+include '../../library/functions.inc.php';
 
+include 'data.ini.php';
+ 
 
 $arrCamposChave = array();
 $arrCamposEditar = array();
@@ -26,6 +25,25 @@ foreach ($arrcampos['campos'] as $key => $value) {
 		$_POST['estado'] = 0;
 	}
 
+	if ($_FILES['icon']['error'] != 4) {
+		$path = $_FILES['icon']['name'];
+		$ext = pathinfo($path, PATHINFO_EXTENSION);
+
+		$nomeclean = clean($_POST['icon']);
+		$file_name = $nomeclean."_".$_POST['id'].".".$ext;
+		$file_tmp = $_FILES['icon']['tmp_name'];
+
+		$upload_folder = "../../images/";
+		$movefile = move_uploaded_file($file_tmp, $upload_folder .$file_name);
+		$_POST['icon'] = $file_name;
+
+		if ($movefile) {
+			echo "Sucesso";
+		}
+		else {
+			echo "Erro";
+		}
+	}	
 
 $query = "UPDATE ".$arrcampos['tabela']. " SET";
 foreach ($arrCamposEditar as $k => $v) {

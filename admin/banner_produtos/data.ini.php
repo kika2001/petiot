@@ -14,7 +14,7 @@ $arrcampos = array (
 				"listar"=>1, 
 				"legenda"=>"Icon",
 				"editar"=>1,
-				"tipo"=>"text",
+				"tipo"=>"file",
 				),
 
 			"titulo" => array (
