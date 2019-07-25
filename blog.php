@@ -50,10 +50,8 @@ include 'library/functions.lib.php';
         <!--================Banner Area =================-->
         <section class="banner_area">
             <div class="container">
-                <div class="banner_inner_text">
-                    <h2>Blog</h2>
-                    <p>Leia as notícias</p>
-                </div>
+                
+            <?php include 'include/blog_titulo.inc.php'?>
             </div>
         </section>
         <!--================End Banner Area =================-->

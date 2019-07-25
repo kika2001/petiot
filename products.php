@@ -57,10 +57,9 @@ if(!isset($_GET['linguas'])) {
 <!--================Banner Area =================-->
 <section class="banner_area">
 <div class="container">
-    <div class="banner_inner_text">
-        <h2>Produtos</h2>
-        <p>O melhor que podemos oferecer</p>
-    </div>
+    
+<?php include 'include/products_banner.inc.php' ?>
+
 </div>
 </section>
 <!--================End Banner Area =================-->
@@ -69,7 +68,7 @@ if(!isset($_GET['linguas'])) {
 <?php include 'include/banner.inc.php' ?>
 <!--================End Banner Area =================-->
 
-<!--================Circle Chart Area =================-->
+<!--================Circle Chart Area =================
 <section class="circle_chart_area">
 <div class="container">
     <div class="row">
@@ -111,7 +110,7 @@ if(!isset($_GET['linguas'])) {
         </div>
     </div>
 </div>
-</section>
+</section>-->
 <!--================End Circle Chart Area =================-->
 
 <!--================Service Solution Area =================-->
@@ -120,41 +119,11 @@ if(!isset($_GET['linguas'])) {
     <div class="row s_solution_inner">
         <div class="col-lg-6">
             <div class="s_solution_item">
-                <div class="l_title">
-                    <img src="img/icon/title-icon.png" alt="">
-                    <h6>Descubra as funcionalidades</h6>
-                    <h2>Soluções simplas para tempos complicados</h2>
-                </div>
-                <p>Etiam nec odio vestibulum est mattis effic iturut magna. Pellentesque sit am et tellus blandit. Etiam nec odio vestibul.Cras ex mauris, ornare eget pretium sit amet, dignissim et turpis. Nunc nec maximus dui, vel suscipit dolor. Donec elementum velit a orci facilisis rutrum. Nam convallis vel erat id dictum. Sed ut risus in orci convallis viverra a eget nisi. Aenean pellentesque elit vitae eros dignissim ultrices. </p>
-                <div id="accordion" role="tablist" class="solution_collaps">
-
-                <?php 
                 
-                $query = "SELECT * FROM funcionalidades WHERE estado =1";
-                $res = my_query($query);
-
-                foreach ($res as $key => $value) {
-
-                ?>
-
-                    <div class="card">
-                        <div class="card-header" role="tab" id="heading<?php echo $value['id']?>">
-                            <h5 class="mb-0">
-                                <a data-toggle="collapse" href="#collapse<?php echo $value['id']?>" aria-expanded="true" aria-controls="collapse<?php echo $value['id']?>">
-                               <?php echo $value['funcionalidade'] ?>
-                                <i class="minus">-</i>
-                                <i class="plus">+</i>
-                                </a>
-                            </h5>
-                        </div>
-
-                        <div id="collapse<?php echo $value['id']?>" class="collapse show" role="tabpanel" aria-labelledby="heading<?php echo $value['id']?>" data-parent="#accordion">
-                            <div class="card-body">
-                                <p><?php echo $value['explicacao']?> </p>
-                            </div>
-                        </div>
-                    </div>
-                <?php } ?>
+            <?php include 'include/products_titulo_funcionalidades.inc.php' ?>
+                <div id="accordion" role="tablist" class="solution_collaps">
+                <?php include 'include/products_funcionalidades.inc.php' ?>
+              
 
                 </div>
             </div>
