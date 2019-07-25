@@ -9,7 +9,7 @@
                         <div class="l_title">
                             <img src="<?php echo $res[$i]['icon'] ?>" alt="">
                             <h6><?php echo $res[$i]['titulo'] ?></h6>
-                            <h2><?php echo $res[$i]['sub_titulo'] ?></h2>
+                            <h2><?php echo $res[$i]['subtitulo'] ?></h2>
                         </div>
                         <p><?php echo $res[$i]['texto'] ?></p>
                     </div>

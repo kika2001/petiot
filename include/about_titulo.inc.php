@@ -9,7 +9,7 @@
             <div class="container">
                 <div class="banner_inner_text">
                     <h2><?php echo $res[$i]['titulo'] ?></h2>
-                    <p><?php echo $res[$i]['sub_titulo'] ?></p>
+                    <p><?php echo $res[$i]['subtitulo'] ?></p>
                 </div>
             </div>
         </section>
