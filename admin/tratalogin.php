@@ -30,7 +30,7 @@ $texto="Prencha os campos";
               header('Location: index.php');
               mysqli_close($conn);
             
-            } elseif ($res[$i]['tipo'] == 'aluno' && $res[$i]['estado'] == 1) {
+            } elseif ($res[$i]['tipo'] == 'user' && $res[$i]['estado'] == 1) {
               $data = date("Y-m-d H:i:s"); 
               $b = "INSERT INTO logs(username,data) VALUES('".$username."','".$data."');";
               inserir($b);
