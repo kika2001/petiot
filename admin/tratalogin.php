@@ -1,7 +1,9 @@
 <?php
 
-include '../library/functions.inc.php';
+include '../library/config.lib.php';
+include '../library/functions.lib.php';
 include '../library/db.lib.php';
+
 $error = '';
 $texto="Prencha os campos";
 
@@ -18,7 +20,6 @@ $texto="Prencha os campos";
 
           $size = sizeof($res); 
           pr($size);
-          
           
           for ($i=0; $i < $size; $i++) { 
       

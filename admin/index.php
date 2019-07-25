@@ -78,7 +78,7 @@
                     <li class="menu-title">Administrador</li><!-- /.menu-title -->
                     <li class="menu-item-has-children dropdown">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <i class="menu-icon fa fa-cogs"></i>Front Page</a>
-                        <ul class="sub-menu children dropdown-menu">                            <li><i class="fa fa-puzzle-piece"></i><a href="ui-buttons.php">Buttons</a></li>
+                        <ul class="sub-menu children dropdown-menu">                            <li><i class="fa fa-user"></i><a href="ui-buttons.php">Buttons</a></li>
                             <li><i class="fa fa-id-badge"></i><a href="ui-badges.php">Badges</a></li>
                             <li><i class="fa fa-bars"></i><a href="ui-tabs.php">Tabs</a></li>
 
