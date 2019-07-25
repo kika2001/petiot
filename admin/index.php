@@ -118,6 +118,20 @@
                     <li>
                         <a href="widgets.php"> <i class="menu-icon ti-email"></i>Widgets </a>
                     </li>
+                    <li>
+                        <a href="widgets.php"> <i class="menu-icon ti-email"></i>Users </a>
+                    </li>
+                    <li>
+                        <a href="widgets.php"> <i class="menu-icon ti-email"></i>Maquinas </a>
+                    </li>
+                    <li class="menu-item-has-children dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <i class="menu-icon fa fa-tasks"></i>FrontOffice</a>
+                        <ul class="sub-menu children dropdown-menu">
+                            <li><i class="menu-icon fa fa-fort-awesome"></i><a href="font-fontawesome.php">Font Awesome</a></li>
+                            <li><i class="menu-icon ti-themify-logo"></i><a href="font-themify.php">Themefy Icons</a></li>
+                        </ul>
+                    </li>
+                    +
                     <li class="menu-item-has-children dropdown">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <i class="menu-icon fa fa-bar-chart"></i>Charts</a>
                         <ul class="sub-menu children dropdown-menu">
