@@ -80,27 +80,26 @@
 
                     <li class="menu-item-has-children dropdown">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <i class="menu-icon fa fa-cogs"></i>Home</a>
-                        <ul class="sub-menu children dropdown-menu">                            <li><i class="fa fa-user"></i><a href="ui-buttons.php">Titulo</a></li>
-                            <li><i class="fa fa-id-badge"></i><a href="ui-badges.php">Feature</a></li>
-                            <li><i class="fa fa-bars"></i><a href="ui-tabs.php">Testimonials</a></li>
-
-                            <li><i class="fa fa-id-card-o"></i><a href="ui-cards.php">Product</a></li>
-                            <li><i class="fa fa-exclamation-triangle"></i><a href="ui-alerts.php">Company</a></li>                            
+                        <ul class="sub-menu children dropdown-menu">                            <li><i class="fa fa-user"></i><a href="feeder/index.php">Feeder</a></li>
+                            <li><i class="fa fa-id-badge"></i><a href="feature/index.php">Feature</a></li>
+                            <li><i class="fa fa-bars"></i><a href="testemonials/index.php">Testimonials</a></li>
+                            <li><i class="fa fa-id-card-o"></i><a href="product/index.php">Product</a></li>
+                            <li><i class="fa fa-exclamation-triangle"></i><a href="company/index.php">Company</a></li>                            
                         </ul>
                     </li>
 
                     <li class="menu-item-has-children dropdown">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <i class="menu-icon fa fa-cogs"></i>Sobre Nós</a>
-                        <ul class="sub-menu children dropdown-menu">                            <li><i class="fa fa-user"></i><a href="ui-buttons.php">About Titulo</a></li>
-                            <li><i class="fa fa-id-badge"></i><a href="ui-badges.php">About Company</a></li>
-                            <li><i class="fa fa-bars"></i><a href="ui-tabs.php">About Testimonials</a></li>
+                        <ul class="sub-menu children dropdown-menu">                            <li><i class="fa fa-user"></i><a href="about_titulo/index.php">About Titulo</a></li>
+                            <li><i class="fa fa-id-badge"></i><a href="about_company/index.php">About Company</a></li>
+                            <li><i class="fa fa-bars"></i><a href="testemonials/index.php">Testimonials</a></li>
                         </ul>
                     </li>
 
                     <li class="menu-item-has-children dropdown">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <i class="menu-icon fa fa-cogs"></i>Produtos</a>
-                        <ul class="sub-menu children dropdown-menu">                            <li><i class="fa fa-user"></i><a href="ui-buttons.php">Products Banner</a></li>
-                            <li><i class="fa fa-id-badge"></i><a href="ui-badges.php">Banner</a></li>
+                        <ul class="sub-menu children dropdown-menu">                            <li><i class="fa fa-user"></i><a href="banner_produtos/index.php">Products Banner</a></li>
+                            <li><i class="fa fa-id-badge"></i><a href="banner_area_contact.php">Banner Contact Area</a></li>
                             <li><i class="fa fa-bars"></i><a href="ui-tabs.php">Products Titulo Funcionalidades</a></li>
 
                             <li><i class="fa fa-id-card-o"></i><a href="ui-cards.php">Products Funcionalidades</a></li>
