@@ -24,6 +24,26 @@ include '../../library/functions.inc.php';
 		$_POST['estado'] = 0;
 	}
 
+	if ($_FILES['logo']['error'] != 4) {
+		$path = $_FILES['logo']['name'];
+		$ext = pathinfo($path, PATHINFO_EXTENSION);
+
+		$nomeclean = clean($_POST['logo']);
+		$file_name = $nomeclean."_".$_POST['logo'].".".$ext;
+		$file_tmp = $_FILES['logo']['tmp_name'];
+
+		$upload_folder = "../../img/";
+		$movefile = move_uploaded_file($file_tmp, $upload_folder .$file_name);
+		$_POST['logo'] = $file_name;
+
+		if ($movefile) {
+			echo "Sucesso";
+		}
+		else {
+			echo "Erro";
+		}
+	}
+
 	
 	$query = "INSERT INTO ".$arrcampos['tabela']." (";
 	$i=0;

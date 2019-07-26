@@ -23,19 +23,6 @@ $arrcampos = array (
 					"editar"=>1,
 					"tipo"=>"text"
 					),
-
-			"imagem" => array (
-					"listar"=>1, 
-					"legenda"=>"Imagem",
-					"editar"=>1,
-					"tipo"=>"file"
-					),
-			"titulo" => array (
-					"listar"=>1, 
-					"legenda"=>"Titulo",
-					"editar"=>1,
-					"tipo"=>"text"
-						),
 			"texto" => array (
 				"listar"=>1, 
 				"legenda"=>"Texto",

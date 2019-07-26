@@ -34,7 +34,7 @@ foreach ($arrcampos['campos'] as $key => $value) {
 		$file_name = $nomeclean."_".$_POST['autor'].".".$ext;
 		$file_tmp = $_FILES['imagem']['tmp_name'];
 
-		$upload_folder = "../../images/";
+		$upload_folder = "../../img/blog/";
 		$movefile = move_uploaded_file($file_tmp, $upload_folder .$file_name);
 		$_POST['imagem'] = $file_name;
 
