@@ -63,7 +63,7 @@ include 'data.ini.php';
 </div>
 </form>
 
-		<a href="http://localhost/petiot/admin/banner_area_contact/index.php"><img src="../feeder/icons/back.png" width="42" height="42"</a>	
+		<a href="http://localhost/funder/admin/blog_quote/index.php"><img src="../contactos/icons/back.png" width="42" height="42"</a>	
 
 </body>
 </html>

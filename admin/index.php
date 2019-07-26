@@ -99,27 +99,24 @@
                     <li class="menu-item-has-children dropdown">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <i class="menu-icon fa fa-cogs"></i>Produtos</a>
                         <ul class="sub-menu children dropdown-menu">                            <li><i class="fa fa-user"></i><a href="banner_produtos/index.php">Products Banner</a></li>
-                            <li><i class="fa fa-id-badge"></i><a href="banner_area_contact.php">Banner Contact Area</a></li>
-                            <li><i class="fa fa-bars"></i><a href="ui-tabs.php">Products Titulo Funcionalidades</a></li>
+                            <li><i class="fa fa-bars"></i><a href="product_titulo_funcionalidades/index.php">Products Titulo Funcionalidades</a></li>
 
-                            <li><i class="fa fa-id-card-o"></i><a href="ui-cards.php">Products Funcionalidades</a></li>
+                            <li><i class="fa fa-id-card-o"></i><a href="product/index.php">Products Funcionalidades</a></li>
                             
                         </ul>
                     </li>
 
                     <li class="menu-item-has-children dropdown">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <i class="menu-icon fa fa-cogs"></i>Blog</a>
-                        <ul class="sub-menu children dropdown-menu">                            <li><i class="fa fa-user"></i><a href="ui-buttons.php">Blog Titulo</a></li>
-                            <li><i class="fa fa-id-badge"></i><a href="ui-badges.php">Blog Page</a></li>
-                            <li><i class="fa fa-bars"></i><a href="ui-tabs.php">Blog Quote</a></li>
+                        <ul class="sub-menu children dropdown-menu">                            <li><i class="fa fa-user"></i><a href="blog_titulo/index.php">Blog Titulo</a></li>
+                            <li><i class="fa fa-id-badge"></i><a href="blog/index.php">Blog Page</a></li>
+                            <li><i class="fa fa-bars"></i><a href="blog_quote/index.php">Blog Quote</a></li>
                         </ul>
                     </li>
 
                     <li class="menu-item-has-children dropdown">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <i class="menu-icon fa fa-cogs"></i>Contactos</a>
-                        <ul class="sub-menu children dropdown-menu">                            <li><i class="fa fa-user"></i><a href="ui-buttons.php">Banner Area</a></li>
-                            <li><i class="fa fa-id-badge"></i><a href="ui-badges.php">Email</a></li>
-
+                        <ul class="sub-menu children dropdown-menu">                            <li><i class="fa fa-user"></i><a href="banner_area_contact/index.php">Banner Area Contact</a></li>
                         </ul>
                     </li>
 
@@ -127,8 +124,8 @@
                     <li class="menu-item-has-children dropdown">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <i class="menu-icon fa fa-th"></i>Footer e Header</a>
                         <ul class="sub-menu children dropdown-menu">
-                            <li><i class="menu-icon fa fa-th"></i><a href="forms-basic.php">Footer</a></li>
-                            <li><i class="menu-icon fa fa-th"></i><a href="forms-advanced.php">Header</a></li>
+                            <li><i class="menu-icon fa fa-th"></i><a href="footer/index.php">Footer</a></li>
+                            <li><i class="menu-icon fa fa-th"></i><a href="header/index.php">Header</a></li>
                         </ul>
                     </li>
 

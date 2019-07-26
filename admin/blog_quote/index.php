@@ -18,7 +18,7 @@ include 'data.ini.php';
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/3.2.0/css/flag-icon.min.css">
     <link rel="stylesheet" href="../assets/css/cs-skin-elastic.css">
     <link rel="stylesheet" href="../assets/css/style.css">
-	<title>Blog Titulo - Listagem</title>
+	<title>Users - Listagem</title>
 </head>
 <body>
 		<div class ="card">
