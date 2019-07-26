@@ -1,15 +1,17 @@
 <?php 
                 
                 $query = "SELECT * FROM blog_titulo WHERE estado =1";
+                
                 $res = my_query($query);
+                $size = sizeof($res);
 
-                foreach ($res as $key => $value) {
+                for($i=0; $i<$size; $i++) {  ?>    
 
                 ?>
                 
                 <div class="banner_inner_text">
-                    <h2>Blog</h2>
-                    <p>Leia as notícias</p>
+                    <h2><?php echo $res[$i]['titulo'] ?></h2>
+                    <p><?php echo $res[$i]['subtitulo'] ?></p>
                 </div>
 
                 <?php } ?>

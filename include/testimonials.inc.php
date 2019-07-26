@@ -10,7 +10,7 @@
                         <h4>“<?php echo $res[$i]['titulo'] ?>”</h4>
                         <p><?php echo $res[$i]['texto'] ?></p>
                         <div class="media">
-                            <img src="<?php echo $res[$i]['imagem'] ?>" alt="">
+                            <img src="img/team/people/<?php echo $res[$i]['imagem'] ?>" alt="">
                             <div class="media-body">
                                 <h5><?php echo $res[$i]['nome'] ?></h5>
                                 <h6><?php echo $res[$i]['cargo'] ?></h6>
