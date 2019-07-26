@@ -7,7 +7,7 @@
 
                 ?>
                 <div class="l_title">
-                    <img src="img/icon/title-icon.png" alt="">
+                    <img src="img/icon/<?php echo $value['icon']?>" alt="">
                     <h6><?php echo $value['subtitulo']?></h6>
                     <h2><?php echo $value['titulo']?></h2>
                 </div>

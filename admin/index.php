@@ -110,48 +110,26 @@
 
                     <li class="menu-item-has-children dropdown">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <i class="menu-icon fa fa-cogs"></i>Blog</a>
-                        <ul class="sub-menu children dropdown-menu">                            <li><i class="fa fa-user"></i><a href="ui-buttons.php">Sobre Nós</a></li>
-                            <li><i class="fa fa-id-badge"></i><a href="ui-badges.php">Badges</a></li>
-                            <li><i class="fa fa-bars"></i><a href="ui-tabs.php">Tabs</a></li>
-
-                            <li><i class="fa fa-id-card-o"></i><a href="ui-cards.php">Cards</a></li>
-                            <li><i class="fa fa-exclamation-triangle"></i><a href="ui-alerts.php">Alerts</a></li>
-                            <li><i class="fa fa-spinner"></i><a href="ui-progressbar.php">Progress Bars</a></li>
-                            <li><i class="fa fa-fire"></i><a href="ui-modals.php">Modals</a></li>
-                            <li><i class="fa fa-book"></i><a href="ui-switches.php">Switches</a></li>
-                            <li><i class="fa fa-th"></i><a href="ui-grids.php">Grids</a></li>
-                            <li><i class="fa fa-file-word-o"></i><a href="ui-typgraphy.php">Typography</a></li>
+                        <ul class="sub-menu children dropdown-menu">                            <li><i class="fa fa-user"></i><a href="ui-buttons.php">Blog Titulo</a></li>
+                            <li><i class="fa fa-id-badge"></i><a href="ui-badges.php">Blog Page</a></li>
+                            <li><i class="fa fa-bars"></i><a href="ui-tabs.php">Blog Quote</a></li>
                         </ul>
                     </li>
 
                     <li class="menu-item-has-children dropdown">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <i class="menu-icon fa fa-cogs"></i>Contactos</a>
-                        <ul class="sub-menu children dropdown-menu">                            <li><i class="fa fa-user"></i><a href="ui-buttons.php">Sobre Nós</a></li>
-                            <li><i class="fa fa-id-badge"></i><a href="ui-badges.php">Badges</a></li>
-                            <li><i class="fa fa-bars"></i><a href="ui-tabs.php">Tabs</a></li>
+                        <ul class="sub-menu children dropdown-menu">                            <li><i class="fa fa-user"></i><a href="ui-buttons.php">Banner Area</a></li>
+                            <li><i class="fa fa-id-badge"></i><a href="ui-badges.php">Email</a></li>
 
-                            <li><i class="fa fa-id-card-o"></i><a href="ui-cards.php">Cards</a></li>
-                            <li><i class="fa fa-exclamation-triangle"></i><a href="ui-alerts.php">Alerts</a></li>
-                            <li><i class="fa fa-spinner"></i><a href="ui-progressbar.php">Progress Bars</a></li>
-                            <li><i class="fa fa-fire"></i><a href="ui-modals.php">Modals</a></li>
-                            <li><i class="fa fa-book"></i><a href="ui-switches.php">Switches</a></li>
-                            <li><i class="fa fa-th"></i><a href="ui-grids.php">Grids</a></li>
-                            <li><i class="fa fa-file-word-o"></i><a href="ui-typgraphy.php">Typography</a></li>
                         </ul>
                     </li>
 
+                    
                     <li class="menu-item-has-children dropdown">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <i class="menu-icon fa fa-table"></i>Tables</a>
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <i class="menu-icon fa fa-th"></i>Footer e Header</a>
                         <ul class="sub-menu children dropdown-menu">
-                            <li><i class="fa fa-table"></i><a href="tables-basic.php">Basic Table</a></li>
-                            <li><i class="fa fa-table"></i><a href="tables-data.php">Data Table</a></li>
-                        </ul>
-                    </li>
-                    <li class="menu-item-has-children dropdown">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <i class="menu-icon fa fa-th"></i>Forms</a>
-                        <ul class="sub-menu children dropdown-menu">
-                            <li><i class="menu-icon fa fa-th"></i><a href="forms-basic.php">Basic Form</a></li>
-                            <li><i class="menu-icon fa fa-th"></i><a href="forms-advanced.php">Advanced Form</a></li>
+                            <li><i class="menu-icon fa fa-th"></i><a href="forms-basic.php">Footer</a></li>
+                            <li><i class="menu-icon fa fa-th"></i><a href="forms-advanced.php">Header</a></li>
                         </ul>
                     </li>
 

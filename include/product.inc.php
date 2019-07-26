@@ -7,13 +7,13 @@
 
                     <div class="text_3d">
                         <div class="l_title">
-                            <img src="<?php echo $res[$i]['icon'] ?>" alt="">
+                            <img src="img/icon/<?php echo $res[$i]['icon'] ?>" alt="">
                             <h6><?php echo $res[$i]['titulo'] ?></h6>
                             <h2><?php echo $res[$i]['subtitulo'] ?></h2>
                         </div>
                         <p><?php echo $res[$i]['texto'] ?></p>
                     </div>
                     <div class="shap_mobile">
-                        <img src="<?php echo $res[$i]['imagem'] ?>" alt="">
+                        <img src="img/<?php echo $res[$i]['imagem'] ?>" alt="">
                     </div>
                     <?php }?>

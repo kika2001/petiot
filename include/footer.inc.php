@@ -10,7 +10,7 @@
                     <div class="row footer_widget_inner">
                         <div class="col-lg-4 col-sm-6">
                             <aside class="f_widget f_about_widget">
-                                <img src="<?php echo $res[$i]['logo'] ?>" alt="">
+                                <img src="img/<?php echo $res[$i]['logo'] ?>" alt="">
                                 <p><?php echo $res[$i]['texto'] ?></p>
                             </aside>
                         </div>

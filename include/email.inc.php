@@ -20,18 +20,7 @@
                             </div>
                         </form>
                     </div>
-                    <div class="col-lg-6">
-                        <div class="touch_details">
-                            <div class="l_title">
-                                <img src="img/icon/title-icon.png" alt="">
-                                <h6>Say hello</h6>
-                                <h2>Get in touch, send us an e-mail or call us</h2>
-                            </div>
-                            <p>Cras ex mauris, ornare eget pretium sit amet, dignissim et turpis. Nunc nec maximus dui, vel suscipit dolor. Donec elementum velit a orci facilisis rutrum.</p>
-                            <a href="#"><h5>Call us now</h5></a>
-                            <a href="#"><h4>+452373 95593 232</h4></a>
-                        </div>
-                    </div>
+                    
                 </div>
             </div>
         </section>

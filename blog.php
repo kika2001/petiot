@@ -92,7 +92,7 @@ include 'library/functions.lib.php';
                                     <li><a href="#"> Etiam egestas viverra </a></li>
                                 </ul>
                             </aside>
-                            <aside class="r_widget insta_widget">
+                           <!-- <aside class="r_widget insta_widget">
                                 <div class="r_w_title">
                                     <h3>Instagram</h3>
                                 </div>
@@ -116,7 +116,7 @@ include 'library/functions.lib.php';
                                         <img class="img-fluid" src="img/instagram/right-instagram/r-in-6.jpg" alt="">
                                     </a></li>
                                 </ul>
-                            </aside>
+                            </aside> -->
                             <aside class="r_widget tag_widget">
                                 <div class="r_w_title">
                                     <h3>Tags</h3>
@@ -131,13 +131,9 @@ include 'library/functions.lib.php';
                                     <li><a href="#">photography</a></li>
                                 </ul>
                             </aside>
-                            <aside class="r_widget quote_widget">
-                                <div class="r_w_title">
-                                    <h3>Quote</h3>
-                                </div>
-                                <img src="img/icon/quote-icon.png" alt="">
-                                <p>Vivamus in urna eu enim porttitor consequat. Proin vitae pulvinar libero. Proin ut hendrerit metus. Aliquam erat volut pat. Donec fermen tum convallis.</p>
-                            </aside>
+                            
+                            <?php include 'include/blog_quote.inc.php' ?>
+
                             <aside class="r_widget add_widget">
                                 <div class="r_w_title">
                                     <h3>Add</h3>
