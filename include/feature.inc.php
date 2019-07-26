@@ -8,7 +8,7 @@
                     <div class="col-lg-4 col-sm-6">
                         <div class="feature_item">
                             <div class="f_icon">
-                                <img src="<?php echo $res[$i]['imagem'] ?>" alt="">
+                                <img src="img/icon/<?php echo $res[$i]['imagem'] ?>" alt="">
                             </div>
                             <h4><?php echo $res[$i]['titulo'] ?></h4>
                             <p><?php echo $res[$i]['texto'] ?></p>

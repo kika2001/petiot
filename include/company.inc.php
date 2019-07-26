@@ -9,7 +9,7 @@
                     <div class="col-lg-6">
                         <div class="team_people_text">
                             <div class="l_title">
-                                <img src="<?php echo $res[$i]['icon'] ?>" alt="">
+                                <img src="img/icon/<?php echo $res[$i]['icon'] ?>" alt="">
                                 <h6><?php echo $res[$i]['titulo'] ?></h6>
                                 <h2><?php echo $res[$i]['subtitulo'] ?></h2>
                             </div>
@@ -28,22 +28,22 @@
                             <div class="row">
                                 <div class="col-lg-6 col-6">
                                     <div class="team_img_item">
-                                        <img src="<?php echo $res[$i]['imagem1'] ?>" alt="">
+                                        <img src="img/team/people/<?php echo $res[$i]['imagem1'] ?>" alt="">
                                     </div>
                                 </div>
                                 <div class="col-lg-6 col-6">
                                     <div class="team_img_item">
-                                        <img src="<?php echo $res[$i]['imagem2'] ?>" alt="">
+                                        <img src="img/team/people/<?php echo $res[$i]['imagem2'] ?>" alt="">
                                     </div>
                                 </div>
                                 <div class="col-lg-6 col-6">
                                     <div class="team_img_item">
-                                        <img src="<?php echo $res[$i]['imagem3'] ?>" alt="">
+                                        <img src="img/team/people/<?php echo $res[$i]['imagem3'] ?>" alt="">
                                     </div>
                                 </div>
                                 <div class="col-lg-6 col-6">
                                     <div class="team_img_item">
-                                        <img src="<?php echo $res[$i]['imagem4'] ?>" alt="">
+                                        <img src="img/team/people/<?php echo $res[$i]['imagem4'] ?>" alt="">
                                     </div>
                                 </div>
                             </div>
