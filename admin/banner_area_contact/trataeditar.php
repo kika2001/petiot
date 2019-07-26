@@ -1,10 +1,9 @@
 <?php
-
-include '../../library/config.lib.php';
-include '../../library/functions.lib.php';
 include '../../library/db.lib.php';
-include 'data.ini.php';
+include '../../library/functions.inc.php';
 
+include 'data.ini.php';
+ 
 
 $arrCamposChave = array();
 $arrCamposEditar = array();

@@ -1,7 +1,7 @@
 <?php
 
 $arrcampos = array (
-		"tabela"=> "banner_produtos",
+		"tabela"=> "blog_quote",
 
 		"campos"=> array (
 
@@ -10,6 +10,12 @@ $arrcampos = array (
 					"chave"=>1, 
 					"legenda"=>"ID"
 					),
+			"titulo" => array (
+				"listar"=>1, 
+				"legenda"=>"Titulo",
+				"editar"=>1,
+				"tipo"=>"text",
+				),
 			"icon" => array (
 				"listar"=>1, 
 				"legenda"=>"Icon",
@@ -17,25 +23,19 @@ $arrcampos = array (
 				"tipo"=>"text",
 				),
 
-			"titulo" => array (
-					"listar"=>1, 
-					"legenda"=>"Titulo",
-					"editar"=>1,
-					"tipo"=>"text"
-					),
-
 			"texto" => array (
 					"listar"=>1, 
 					"legenda"=>"Texto",
 					"editar"=>1,
 					"tipo"=>"text"
 					),
-			"lingua" => array (
+
+			"linguas" => array (
 					"listar"=>1, 
-					"legenda"=>"Linguas",
+					"legenda"=>"Lingua",
 					"editar"=>1,
 					"tipo"=>"text"
-						),
+					),
 			"estado" => array (
 					"listar"=>1, 
 					"legenda"=>"Ativo",

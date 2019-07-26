@@ -1,7 +1,7 @@
 <?php
 
 $arrcampos = array (
-		"tabela"=> "about_company",
+		"tabela"=> "product_titulo_funcionalidades",
 
 		"campos"=> array (
 
@@ -31,29 +31,17 @@ $arrcampos = array (
 					"tipo"=>"text"
 					),
 			"texto" => array (
+				"listar"=>1, 
+				"legenda"=>"Texto",
+				"editar"=>1,
+				"tipo"=>"text"
+				),
+			"linguas" => array (
 					"listar"=>1, 
-					"legenda"=>"Texto",
+					"legenda"=>"Linguas",
 					"editar"=>1,
 					"tipo"=>"text"
 						),
-			"link_video" => array (
-				"listar"=>1, 
-				"legenda"=>"Link do Video",
-				"editar"=>1,
-				"tipo"=>"text"
-					),		
-			"imagem" => array (
-				"listar"=>1, 
-				"legenda"=>"Imagem",
-				"editar"=>1,
-				"tipo"=>"file"
-					),
-			"linguas" => array (
-				"listar"=>1, 
-				"legenda"=>"Lingua",
-				"editar"=>1,
-				"tipo"=>"file"
-					),
 			"estado" => array (
 					"listar"=>1, 
 					"legenda"=>"Ativo",

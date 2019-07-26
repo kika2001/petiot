@@ -22,7 +22,7 @@
                     </div>
                     <div class="col-lg-6 challange_img">
                         <div class="challange_img_inner">
-                            <img class="img-fluid" src="<?php echo $res[$i]['imagem'] ?>" alt="">
+                            <img class="img-fluid" src="img/<?php echo $res[$i]['imagem'] ?>" alt="">
                         </div>
                     </div>
                 </div>

@@ -41,7 +41,7 @@ $arrcampos = array (
 				"legenda"=>"Texto",
 				"editar"=>1,
 				"tipo"=>"text"
-					),,
+					),
 			"linguas" => array (
 				"listar"=>1, 
 				"legenda"=>"Lingua",
