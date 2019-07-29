@@ -1,0 +1,4 @@
+http:\\petiot.ddns.net\update\d1_mini\file.txt
+
+Sonoff
+petiot.ddns.net/update/d1_mini/sonoff.bin

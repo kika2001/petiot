@@ -8,11 +8,13 @@
 
                 for($i=0; $i<$size; $i++) {  ?>    
 
-                ?>
+                
                             <aside class="r_widget quote_widget">
                                 <div class="r_w_title">
                                     <h3><?php echo $res[$i]['titulo'] ?></h3>
                                 </div>
-                                <img src="img/icon/<?php echo $res[$i]['icon'] ?>" alt="">
+                                <img src="img/icon/<?php echo $res[$i]['icon']?>" alt="">
                                 <p><?php echo $res[$i]['texto'] ?></p>
                             </aside>
+
+                <?php } ?>
