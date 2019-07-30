@@ -52,7 +52,7 @@ $arrcampos = array (
 				"listar"=>1, 
 				"legenda"=>"Noticia",
 				"editar"=>1,
-				"tipo"=>"text"
+				"tipo"=>"textarea"
 					),
 			"lingua" => array (
 				"listar"=>1, 
