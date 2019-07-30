@@ -47,6 +47,7 @@ function getTIPO_editar($v, $valor) {
 
 		case 'file':
 			$str.='<input type="file" name="'.$v['nome_campo_editar'].'" value="">';
+	
 			break;
 
 		case 'select':

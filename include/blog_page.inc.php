@@ -11,7 +11,7 @@
         ?>
                             <div class="blog_main_item">
                                 <div class="blog_img">
-                                    <img class="img-fluid" src="img/blog/<?php echo $value['imagem'] ?>" alt="">
+                                    <img width="825" height="254" class="" src="img/blog/<?php echo $value['imagem'] ?>"  alt="">
                                     <div class="blog_date">
                                         <h4><?php echo $value['dia'] ?></h4>
                                         <h5><?php echo $value['mes_ano'] ?></h5>
