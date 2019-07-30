@@ -139,13 +139,10 @@
                         </ul>
                     </li>
                     <li>
-                        <a href="widgets.php"> <i class="menu-icon ti-email"></i>Widgets </a>
-                    </li>
-                    <li>
                         <a href="widgets.php"> <i class="menu-icon ti-email"></i>Users </a>
                     </li>
                     <li>
-                        <a href="widgets.php"> <i class="menu-icon ti-email"></i>Maquinas </a>
+                        <a href="maquinas.php"> <i class="menu-icon ti-email"></i>Maquinas </a>
                     </li>
                     <li class="menu-item-has-children dropdown">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <i class="menu-icon fa fa-tasks"></i>FrontOffice</a>
