@@ -63,7 +63,7 @@ include 'data.ini.php';
 	</table>
 	<table border ="1">
 		<td>
-		<a href="../index.php"><img src="../contactos/icons/back.png" width="42" height="42"</a>	
+		<a href="../index.php?user=<?php echo $_GET['user'] ?>"><img src="../contactos/icons/back.png" width="42" height="42"</a>	
 		</td>
 	</table>
 	

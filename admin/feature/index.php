@@ -70,7 +70,7 @@ include 'data.ini.php';
 	</div>
 	<table border ="1">
 		<td>
-		<a href="../index.php"><img src="../feeder/icons/back.png" width="42" height="42"</a>	
+		<a href="../index.php?user=<?php echo $_GET['user'] ?>"><img src="../feeder/icons/back.png" width="42" height="42"</a>	
 		<td>
 		<a href="inserir.php"><img src="../feeder/icons/inserir.png" width="42" height="42"</a>
 		</td>
