@@ -23,7 +23,9 @@ $texto="Prencha os campos";
           
           
           for ($i=0; $i < $size; $i++) { 
-      
+            $hash = $res[$i]['password'];
+            pr($hash);
+            
             if($res[$i]['tipo'] == 'admin' && $res[$i]['estado'] == 1 && password_verify($password, $hash)) {
               
               $data = date("Y-m-d H:i:s"); 

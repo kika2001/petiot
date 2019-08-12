@@ -1,3 +1,14 @@
+<?php 
+
+$url = $_SERVER['SERVER_NAME'];
+if (!isset($_GET['erro'])) {
+	header('Location:' . $_SERVER[REQUEST_URI]. '?erro=0');
+	exit();
+}
+
+?>
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -13,6 +24,22 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+
+<?php 
+
+$erro = $_GET['erro'];
+switch ($erro) {
+    case '1':
+    ?>
+    <script> window.alert("The password doenst match! / As passwords não são iguais!")</script>
+    <?php
+        break;
+ 
+    default:
+        # code...
+        break;
+}
+?>
 
     <div class="main">
 

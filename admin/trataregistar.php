@@ -20,7 +20,7 @@ include '../library/db.lib.php';
         
         header ('location: login.php');
     }else{
-        header ('location: login.php');
+        header ('location: register.php?erro=1');
     }
 
     
