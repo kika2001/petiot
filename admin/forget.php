@@ -36,10 +36,10 @@
                     </a>
                 </div>
                 <div class="login-form">
-                    <form>
+                    <form method="POST" action="trataforget.php">
                         <div class="form-group">
                             <label>Email address</label>
-                            <input type="email" class="form-control" placeholder="Email">
+                            <input type="email" class="form-control" placeholder="Email" name="email" id="email">
                         </div>
                         <button type="submit" class="btn btn-primary btn-flat m-b-15">Submit</button>
                     </form>

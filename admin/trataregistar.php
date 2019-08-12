@@ -11,7 +11,26 @@ include '../library/db.lib.php';
     $terms = $_POST['agree-term'];
    
 
-    if ($terms == 1 && $password == $re_pass) {
+           
+     
+        $query = "SELECT * FROM users";        
+        $res = my_query($query);   
+        
+        $size = sizeof($res); 
+        
+        for ($i=0; $i <$size; $i++) { 
+           
+        if ($username == $res[$i]['username']) 
+        {
+           $erro=2;
+        }
+           
+    
+        }
+
+
+
+    if ($terms == 1 && $password == $re_pass && $erro == NULL ) {
         $password = password_hash($_POST['password'], PASSWORD_DEFAULT);
         $query = "INSERT INTO users (nome,username,password,email,estado,tipo) VALUES ('".$name."','".$username."','".$password."','".$email."',1,'user')";
         pr($query);
@@ -19,7 +38,11 @@ include '../library/db.lib.php';
         
         
         header ('location: login.php');
-    }else{
+    }elseif ($erro==2) {
+        header ('location: register.php?erro=2');
+    
+        
+    }else {
         header ('location: register.php?erro=1');
     }
 

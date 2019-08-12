@@ -62,7 +62,7 @@
 							Palavra-passe
 						</span>
 
-						<a href="recupera_pass.php" class="txt2 bo1 m-l-5">
+						<a href="forget.php" class="txt2 bo1 m-l-5">
 							Esqueceu-se?
 						</a>
 					</div>

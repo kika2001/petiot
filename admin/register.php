@@ -34,7 +34,11 @@ switch ($erro) {
     <script> window.alert("The password doenst match! / As passwords não são iguais!")</script>
     <?php
         break;
- 
+    case '2':
+    ?>
+    <script> window.alert("The user has already been taken! / O utilizador já existe!")</script>
+    <?php
+        break;  
     default:
         # code...
         break;
