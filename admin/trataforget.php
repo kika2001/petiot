@@ -1,7 +1,12 @@
 <?php
 include '../library/functions.lib.php';
 include '../library/db.lib.php';
-require '../library/PHPMailerAutoload.php';
+use PHPMailer\PHPMailer\PHPMailer;
+use PHPMailer\PHPMailer\Exception;
+
+require '../library/PHPMailer/src/Exception.php';
+require '../library/PHPMailer/src/PHPMailer.php';
+require '../library/PHPMailer/src/SMTP.php';
 
     $email = $_POST['email'];
     $token = $password = password_hash($email, PASSWORD_DEFAULT);
@@ -11,7 +16,7 @@ require '../library/PHPMailerAutoload.php';
 $mail = new PHPMailer;
 
 $mail->isSMTP();                                      // Set mailer to use SMTP
-$mail->Host = 'smtp.gmail.com;smtp2.example.com';  // Specify main and backup SMTP servers
+$mail->Host = 'smtp.gmail.com';  // Specify main and backup SMTP servers
 $mail->SMTPAuth = true;                               // Enable SMTP authentication
 $mail->Username = 'petiotportugal@gmail.com';                 // SMTP username
 $mail->Password = 'saldanha';                           // SMTP password
@@ -28,7 +33,7 @@ $mail->addAttachment('/tmp/image.jpg', 'new.jpg');    // Optional name
 $mail->isHTML(true);                                  // Set email format to HTML
 
 $mail->Subject = 'Here is the subject';
-$mail->Body    = 'This is the HTML message body <b>in bold!</b>';
+$mail->Body    = 'Muda a password aqui: http://localhost/petiot/admin/mudarpass?token='.$token.' <b>in bold!</b>';
 $mail->AltBody = 'This is the body in plain text for non-HTML mail clients';
 
 if(!$mail->send()) {
@@ -48,39 +53,32 @@ if(!$mail->send()) {
 
            
      
-        $query = "SELECT * FROM users";        
+        $query = "SELECT * FROM users WHERE email ='". $email."'";        
         $res = my_query($query);   
         
         $size = sizeof($res); 
         
         for ($i=0; $i <$size; $i++) { 
            
-        if ($username == $res[$i]['username']) 
+        if ($email == $res[$i]['email']) 
         {
-           $erro=2;
-        }
-           
+           $sucesso =1;
+           $user = $res[$i]['username'];
+        }           
     
         }
 
 
 
-    if ($terms == 1 && $password == $re_pass && $erro == NULL ) {
-        $password = password_hash($_POST['password'], PASSWORD_DEFAULT);
-        $query = "INSERT INTO users (nome,username,password,email,estado,tipo) VALUES ('".$name."','".$username."','".$password."','".$email."',1,'user')";
+
+        $token = password_hash($email, PASSWORD_DEFAULT);
+        $query = "UPDATE users SET token ='".$token."' WHERE email ='". $email."';";
         pr($query);
         my_query($query);
         
-        
+        die();
         header ('location: login.php');
-    }elseif ($erro==2) {
-        header ('location: register.php?erro=2');
     
-        
-    }else {
-        header ('location: register.php?erro=1');
-    }
-
     
 
 
