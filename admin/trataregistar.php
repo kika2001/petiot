@@ -9,7 +9,6 @@ include '../library/db.lib.php';
     $re_pass = $_POST['re_password'];
     $email = $_POST['email'];
     $terms = $_POST['agree-term'];
-   
 
            
      
@@ -30,12 +29,12 @@ include '../library/db.lib.php';
 
 
 
-    if ($terms == 1 && $password == $re_pass && $erro == NULL ) {
+    if ($terms == 1 && $password == $re_pass ) {
         $password = password_hash($_POST['password'], PASSWORD_DEFAULT);
-        $query = "INSERT INTO users (nome,username,password,email,estado,tipo) VALUES ('".$name."','".$username."','".$password."','".$email."',1,'user')";
+        $query = "INSERT INTO users (nome,username,password,email,estado,tipo,token) VALUES ('".$name."','".$username."','".$password."','".$email."',1,'user','0')";
         pr($query);
         my_query($query);
-        
+        die();
         
         header ('location: login.php');
     }elseif ($erro==2) {
