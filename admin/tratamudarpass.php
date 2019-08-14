@@ -29,12 +29,6 @@ include '../library/db.lib.php';
         
         
         header ('location: login.php');
-    }elseif ($erro==2) {
-        header ('location: register.php?erro=2');
-    
-        
-    }else {
-        header ('location: register.php?erro=1');
     }
 
     
