@@ -39,7 +39,7 @@ include 'data.ini.php';
 	}
 
 ?>
-<form action="tratainserir.php" method="POST" enctype="multipart/form-data">
+<form action="tratainserir.php?user=<?php echo $_GET['user'] ?>" method="POST" enctype="multipart/form-data">
 <div class ="card">
 	<div class ="table-stats order-table ov-h">
 <table>
@@ -63,7 +63,7 @@ include 'data.ini.php';
 </div>
 </form>
 
-		<a href="http://localhost/petiot/admin/feeder/index.php"><img src="../feeder/icons/back.png" width="42" height="42"</a>	
+		<a href="http://localhost/petiot/admin/feeder/index.php?user=<?php echo $_GET['user'] ?>"><img src="../feeder/icons/back.png" width="42" height="42"</a>	
 
 </body>
 </html>

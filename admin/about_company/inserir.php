@@ -39,7 +39,7 @@ include 'data.ini.php';
 	}
 
 ?>
-<form action="tratainserir.php" method="POST" enctype="multipart/form-data">
+<form action="tratainserir.php?user=<?php echo $_GET['user'] ?>" method="POST" enctype="multipart/form-data">
 <div class ="card">
 	<div class ="table-stats order-table ov-h">
 <table>

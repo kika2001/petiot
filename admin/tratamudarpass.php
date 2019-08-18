@@ -24,7 +24,7 @@ include '../library/config.lib.php';
 
     if ($password == $re_pass) {
         $password = password_hash($_POST['password'], PASSWORD_DEFAULT);
-        $query = "UPDATE users SET password ='".$password."' AND token = '0' WHERE token = ".$token."";
+        $query = "UPDATE users SET pass ='".$password."' AND token = '0' WHERE token = ".$token."";
         pr($query);
         die();
         my_query($query);
