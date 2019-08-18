@@ -18,7 +18,7 @@ include 'data.ini.php';
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/3.2.0/css/flag-icon.min.css">
     <link rel="stylesheet" href="../assets/css/cs-skin-elastic.css">
     <link rel="stylesheet" href="../assets/css/style.css">
-	<title>Users - Listagem</title>
+	<title>Tipo de Produto - Listagem</title>
 </head>
 <body>
 		<div class ="card">
@@ -72,7 +72,7 @@ include 'data.ini.php';
 		<td>
 		<a href="../index.php?user=<?php echo $_GET['user'] ?>"><img src="../feeder/icons/back.png" width="42" height="42"</a>	
 		<td>
-		<a href="inserir.php?user=<?php echo $_GET['user'] ?>"><img src="../feeder/icons/inserir.png" width="42" height="42"</a>
+		<a href="inserir.php"><img src="../feeder/icons/inserir.png" width="42" height="42"</a>
 		</td>
 		</td>
 	</table>
