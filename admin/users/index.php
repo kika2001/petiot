@@ -57,8 +57,8 @@ include 'data.ini.php';
 			}
 		
 				
-			echo '<td><a href="editar.php?id='.$value['id'].'"><img src="../contactos/icons/editar.png" width="42" height="42"</a></td>';
-			echo '<td><a href="eliminar.php?id='.$value['id'].'"><img src="../contactos/icons/delete.png" width="42" height="42"</a></td>';
+			echo '<td><a href="editar.php?id='.$value['id'].'&user='.$_GET['user'].'"><img src="../contactos/icons/editar.png" width="42" height="42"</a></td>';
+			echo '<td><a href="eliminar.php?id='.$value['id'].'&user='.$_GET['user'].'"><img src="../contactos/icons/delete.png" width="42" height="42"</a></td>';
 			echo '</tr>';
 
 		}
@@ -72,7 +72,7 @@ include 'data.ini.php';
 		<td>
 		<a href="../index.php?user=<?php echo $_GET['user'] ?>"><img src="../contactos/icons/back.png" width="42" height="42"</a>	
 		<td>
-		<a href="inserir.php"><img src="../contactos/icons/inserir.png" width="42" height="42"</a>
+		<a href="inserir.php?user=<?php echo $_GET['user'] ?>"><img src="../contactos/icons/inserir.png" width="42" height="42"</a>
 		</td>
 		</td>
 	</table>

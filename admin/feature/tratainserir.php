@@ -80,5 +80,5 @@ include '../../library/functions.inc.php';
 	$query.= ")";
 
 	$res = inserir($query);
-	header("Location: index.php");
+	header("Location: index.php?user=<?php echo $_GET['user'] ?>");
 ?>

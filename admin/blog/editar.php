@@ -56,7 +56,7 @@ if(!isset($dados[0])) {
 
 ?>
 
-<form action="trataeditar.php" method="POST" enctype="multipart/form-data">
+<form action="trataeditar.php?user=<?php echo $_GET['user'] ?>" method="POST" enctype="multipart/form-data">
 
 <?php
 foreach ($arrCamposChave as $key => $value) {
