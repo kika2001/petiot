@@ -72,7 +72,7 @@ include 'data.ini.php';
 		<td>
 		<a href="../index.php?user=<?php echo $_GET['user'] ?>"><img src="../feeder/icons/back.png" width="42" height="42"</a>	
 		<td>
-		<a href="inserir.php"><img src="../feeder/icons/inserir.png" width="42" height="42"</a>
+		<a href="inserir.php?user=<?php echo $_GET['user'] ?>"><img src="../feeder/icons/inserir.png" width="42" height="42"</a>
 		</td>
 		</td>
 	</table>

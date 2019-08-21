@@ -8,5 +8,5 @@ include 'data.ini.php';
 $query = "DELETE FROM ".$arrcampos['tabela']." WHERE id = ".$_GET['id'];
 
 $res = my_query($query);
-header("Location: index.php?user=<?php echo $_GET['user'] ?>");
+header("Location: index.php?user=". $_GET['user']."");
 ?>

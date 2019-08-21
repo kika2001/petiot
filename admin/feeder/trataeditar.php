@@ -57,6 +57,6 @@ $query = substr($query, 0, -1);
 $query .= " WHERE id=" .$_POST['id'];
 
 $res = editar($query);
-header("Location: index.php?user=<?php echo $_GET['user'] ?>");
+header("Location: index.php?user=". $_GET['user']."");
 ?>
 

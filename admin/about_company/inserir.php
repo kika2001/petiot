@@ -63,7 +63,7 @@ include 'data.ini.php';
 </div>
 </form>
 
-		<a href="http://localhost/petiot/admin/about_company/index.php"><img src="../feeder/icons/back.png" width="42" height="42"</a>	
+		<a href="http://localhost/petiot/admin/about_company/index.php?user=<?php echo $_GET['user'] ?>"><img src="../feeder/icons/back.png" width="42" height="42"</a>	
 
 </body>
 </html>
