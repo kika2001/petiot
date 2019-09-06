@@ -105,7 +105,7 @@ include '../library/db.lib.php';
                             
                 ?>
 
-                    <li><a href="#<?php echo $res2[$i]['tipo']?>" data-toggle="tab"><?php echo $res2[$i]['tipo']?></a></li>
+                    <li><a href="#<?php echo $res2[$i]['id']?>" data-toggle="tab"><?php echo $res2[$i]['tipo']?></a></li>
 
                 <?php } ?>
                 </ul>
@@ -119,7 +119,7 @@ include '../library/db.lib.php';
                 $query3 = "SELECT * FROM produtos WHERE tipo_produto = $id";
                 $res3 = my_query($query3);
                 $tipo = $value1['tipo'];
-                echo "<div class='tab-pane fade $f' id='$tipo'>";
+                echo "<div class='tab-pane fade $f' id='$id'>";
                 $f = '';
                 foreach ($res3 as $value) {?>
                 <form action="inserir_cart.php">

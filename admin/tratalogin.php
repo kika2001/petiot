@@ -14,17 +14,17 @@ $texto="Prencha os campos";
           $password = $_POST['password'];
     
           $query = "SELECT * FROM users WHERE username=" . "'$username'"; 
-          pr($query);
+
           $res = my_query($query);
-          pr($res);
+  
 
           $size = sizeof($res); 
-          pr($size);
+      
           
           
           for ($i=0; $i < $size; $i++) { 
             $hash = $res[$i]['password'];
-            pr($hash);
+       
             
             if($res[$i]['tipo'] == 'admin' && $res[$i]['estado'] == 1 && password_verify($password, $hash)) {
               
