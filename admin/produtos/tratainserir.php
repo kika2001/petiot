@@ -57,7 +57,9 @@ include 'data.ini.php';
 		if ($i==0) {
 			$query.=$arrCamposEditar[$k].",";
 			$i = 1; 
-		} else {
+		} 
+		else 
+		{
 			$query .= " ".$arrCamposEditar[$k].","; 
 		}
 	}
