@@ -20,10 +20,12 @@ $texto="Prencha os campos";
 
           $size = sizeof($res); 
       
-          
+          $options = [
+            'cost' => 12,
+        ];
           
           for ($i=0; $i < $size; $i++) { 
-            $hash = $res[$i]['password'];
+           $hash = password_hash($res[$i]['password'],PASSWORD_BCRYPT,$options);
        
             
             if($res[$i]['tipo'] == 'admin' && $res[$i]['estado'] == 1 && password_verify($password, $hash)) {
