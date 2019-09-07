@@ -1,7 +1,7 @@
 <?php
 
 $arrcampos = array (
-		"tabela"=> "tipo_produto",
+		"tabela"=> "tipo_produtos",
 
 		"campos"=> array (
 

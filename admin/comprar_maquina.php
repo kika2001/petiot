@@ -96,7 +96,7 @@ include '../library/db.lib.php';
 
                 <?php
                 
-                $query2 = "SELECT * FROM tipo_produto";
+                $query2 = "SELECT * FROM tipo_produtos";
                 $res2 = my_query($query2);
                 $size2 = sizeof($res2);
 
@@ -105,24 +105,23 @@ include '../library/db.lib.php';
                             
                 ?>
 
-                    <li><a href="#<?php echo $res2[$i]['id']?>" data-toggle="tab"><?php echo $res2[$i]['tipo']?></a></li>
+                    <li><a href="#<?php echo $res2[$i]['tipo']?>" data-toggle="tab"><?php echo $res2[$i]['tipo']?></a></li>
 
                 <?php } ?>
                 </ul>
             </div>
 
             <?php
+            
             echo '<div class="tab-content">';
-            $f = 'in active';
             foreach ($res2 as $value1) {
                 $id = $value1['id'];
                 $query3 = "SELECT * FROM produtos WHERE tipo_produto = $id";
-                $res3 = my_query($query3);
+                $res3 = my_query($query3);  
                 $tipo = $value1['tipo'];
-                echo "<div class='tab-pane fade $f' id='$id'>";
-                $f = '';
+                echo "<div class='tab-pane fade in active' id='$tipo'>";
                 foreach ($res3 as $value) {?>
-                <form action="inserir_cart.php">
+                <form action="inserir_cart.php?action=add&id=<?php echo $value['id'] ?>">
                         <div class="col-sm-3">
                             <div class="product-image-wrapper">
                                 <div class="single-products">
@@ -134,17 +133,16 @@ include '../library/db.lib.php';
                                         <input type="hidden" name ="nome_produto" value="<?php echo $value['nome']; ?>">
                                         <input type="hidden" name ="preco_produto" value="<?php echo $value['preco']; ?>">
                                         <input href ="inserir_cart.php"type="submit" name= "add_to_cart" style ="margin-top: 5px;" class="btn btn-default add-to-cart" value ="Adicionar ao Carrinho">
-                                    </div>
-                                    
+                                    </div>   
                                 </div>
                             </div>
                             </form>
                         </div>
                     <?php 
-                    $f = false;
                 }
                 echo '</div>';
             }
+            
             echo '</div>';
             ?>
             <div class="table-responsive">
@@ -188,3 +186,14 @@ include '../library/db.lib.php';
             <form action="sucesso.php">
             <button id="submit" name ="submit" type="submit" class="btn btn-default">Comprar</button>
             </form>
+            <script src="js/jquery.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/jquery.scrollUp.min.js"></script>
+	<script src="js/price-range.js"></script>
+    <script src="js/jquery.prettyPhoto.js"></script>
+    <script src="js/main.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+
