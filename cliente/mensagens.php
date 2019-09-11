@@ -13,8 +13,8 @@
 
   session_start();
   include '../library/config.lib.php';
-include $arrConfig['dir_admin'].'/library/db.lib.php';
-include $arrConfig['dir_admin'].'/library/functions.lib.php';
+include '../library/db.lib.php';
+include '../library/functions.lib.php';
 $addurl= '?user='. $_GET['user']; 
 include 'menu.php';  
    

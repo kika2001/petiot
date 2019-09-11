@@ -38,7 +38,7 @@
 				$intervalo = $maquinas[$i]['intervalo'];
 				echo "<br><br>";
 				// Formulate Query
-				$query = "SELECT * FROM logs WHERE idmaquina='". $maquinas[$i]['idmaquina']. "'";
+				$query = "SELECT * FROM logs_maquina WHERE idmaquina='". $maquinas[$i]['idmaquina']. "'";
 				// Perform Query
 				$tempos = my_query($query);
 				// Last time registration

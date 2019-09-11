@@ -10,8 +10,8 @@
 	<?php 
 		session_start();
 		include '../library/config.lib.php';
-		include $arrConfig['dir_admin'].'/library/db.lib.php';
-		include $arrConfig['dir_admin'].'/library/functions.lib.php';
+		include '../library/db.lib.php';
+		include '../library/functions.lib.php';
 		
 		$addurl = '?user='. $_GET['user'];
 		$user= $_GET['user'];
@@ -134,7 +134,7 @@
 
 	<?php
 		// Formulate Query
-	$query = "SELECT * FROM logs WHERE idmaquina='". $idmaquina. "' ORDER BY data DESC";
+	$query = "SELECT * FROM logs_maquina WHERE idmaquina='". $idmaquina. "' ORDER BY data DESC";
 	// Perform Query
 	$logs = my_query($query);
 	//Verificar se esta vazio
