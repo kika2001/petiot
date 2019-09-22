@@ -113,32 +113,32 @@ include '../library/db.lib.php';
 					<div class="single-products">
 							<div class="productinfo text-center">
 								<img src="../img/produtos/<?php echo $value['foto'] ?>" alt="" />
-								<h2><?php echo $value['preco'];?>€</h2>
-								<p><?php echo $value['nome']; ?></p>
+                                <p><?php echo $value['nome']; ?></p>
+                                <h2><?php echo $value['preco'];?>€</h2>
 								<input type="text" name= "quantidade" class = "form-control" value="1">
                                 <input type="hidden" name ="nome_produto" value="<?php echo $value['nome']; ?>">
                                 <input type="hidden" name ="preco_produto" value="<?php echo $value['preco']; ?>">
-								<input href ="inserir_cart.php"type="submit" name= "add_to_cart" style ="margin-top: 5px;" class="btn btn-default add-to-cart" value ="Adicionar ao Carrinho">
+								<input type="submit" name= "add_to_cart" style ="margin-top: 5px;" class="btn btn-default add-to-cart" value ="Adicionar ao Carrinho">
 							</div>
 								</div>
 								<div class="choose">
 						</div>
 					</div>
 				</div>
-
+                </form>
 
 
 				<?php 
 			}
 
 				?>
-                </form>
+                
                
 </div>
 
 <div class="features_items"><!--features_items-->
 <br> <br>
-	<h2 class="title text-center">Peças para Máquina</h2>
+	<h2 class="title text-center">Máquinas</h2>
 	
 			<?php 
 			
@@ -150,38 +150,38 @@ include '../library/db.lib.php';
 
 			foreach ($res as $key => $value) {
 				?>
-                <form action="inserir_cart.php?action=add&id=<?php echo $value['id'] ?>">
+                <form action="inserir_cart.php">
 				<div class="col-sm-4">
 						<div  style ="width:250px" class="product-image-wrapper">
 					<div class="single-products">
 							<div class="productinfo text-center">
 								<img src="../img/produtos/<?php echo $value['foto'] ?>" alt="" />
-								<h2><?php echo $value['preco'];?>€</h2>
-								<p><?php echo $value['nome']; ?></p>
+                                <p><?php echo $value['nome']; ?></p>
+                                <h2><?php echo $value['preco'];?>€</h2>
 								<input type="text" name= "quantidade" class = "form-control" value="1">
                                 <input type="hidden" name ="nome_produto" value="<?php echo $value['nome']; ?>">
                                 <input type="hidden" name ="preco_produto" value="<?php echo $value['preco']; ?>">
-								<input href ="inserir_cart.php"type="submit" name= "add_to_cart" style ="margin-top: 5px;" class="btn btn-default add-to-cart" value ="Adicionar ao Carrinho">
+								<input type="submit" name= "add_to_cart" style ="margin-top: 5px;" class="btn btn-default add-to-cart" value ="Adicionar ao Carrinho">
 							</div>
 								</div>
 								<div class="choose">
 						</div>
 					</div>
 				</div>
-
+                </form>
 
 
 				<?php 
 			}
 
 				?>
-                </form>
+                
                
 </div>
 
 <div class="features_items"><!--features_items-->
 <br> <br>
-	<h2 class="title text-center">Comida para os animais</h2>
+	<h2 class="title text-center">Máquinas</h2>
 	
 			<?php 
 			
@@ -199,26 +199,26 @@ include '../library/db.lib.php';
 					<div class="single-products">
 							<div class="productinfo text-center">
 								<img src="../img/produtos/<?php echo $value['foto'] ?>" alt="" />
-								<h2><?php echo $value['preco']?>€</h2>
-								<p><?php echo $value['nome'] ?></p>
+                                <p><?php echo $value['nome']; ?></p>
+                                <h2><?php echo $value['preco'];?>€</h2>
 								<input type="text" name= "quantidade" class = "form-control" value="1">
-                                <input type="hidden" name ="nome_produto" value="<?php echo $value['nome'] ?>">
-                                <input type="hidden" name ="preco_produto" value="<?php echo $value['preco'] ?>">
-								<input href ="inserir_cart.php"type="submit" name= "add_to_cart" style ="margin-top: 5px;" class="btn btn-default add-to-cart" value ="Adicionar ao Carrinho">
+                                <input type="hidden" name ="nome_produto" value="<?php echo $value['nome']; ?>">
+                                <input type="hidden" name ="preco_produto" value="<?php echo $value['preco']; ?>">
+								<input type="submit" name= "add_to_cart" style ="margin-top: 5px;" class="btn btn-default add-to-cart" value ="Adicionar ao Carrinho">
 							</div>
 								</div>
 								<div class="choose">
 						</div>
 					</div>
 				</div>
-
+                </form>
 
 
 				<?php 
 			}
 
 				?>
-                </form>
+                
                
 </div>
 
