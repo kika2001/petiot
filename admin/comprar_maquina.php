@@ -5,6 +5,7 @@ include '../library/db.lib.php';
 ?>
 
 
+
 <?php 
 
 
@@ -91,60 +92,137 @@ include '../library/db.lib.php';
 <link rel="apple-touch-icon-precomposed" href="images/ico/apple-touch-icon-57-precomposed.png">
 </head><!--/head-->
 
-<div class="col-sm-12">
-                <ul class="nav nav-tabs">
 
-                <?php
-                
-                $query2 = "SELECT * FROM tipo_produtos";
-                $res2 = my_query($query2);
-                $size2 = sizeof($res2);
+<div class="features_items"><!--features_items-->
+<br> <br>
+	<h2 class="title text-center">Máquinas</h2>
+	
+			<?php 
+			
+			
+			$query = "SELECT * FROM produtos WHERE tipo_produto = 5 ";
+			$res = my_query($query);
+			$size = sizeof($res);
 
-                for ($i=0; $i < $size2 ; $i++) { 
-                                            
-                            
-                ?>
 
-                    <li><a href="#<?php echo $res2[$i]['tipo']?>" data-toggle="tab"><?php echo $res2[$i]['tipo']?></a></li>
+			foreach ($res as $key => $value) {
+				?>
+                <form action="inserir_cart.php">
+				<div class="col-sm-4">
+						<div  style ="width:250px" class="product-image-wrapper">
+					<div class="single-products">
+							<div class="productinfo text-center">
+								<img src="../img/produtos/<?php echo $value['foto'] ?>" alt="" />
+								<h2><?php echo $value['preco'];?>€</h2>
+								<p><?php echo $value['nome']; ?></p>
+								<input type="text" name= "quantidade" class = "form-control" value="1">
+                                <input type="hidden" name ="nome_produto" value="<?php echo $value['nome']; ?>">
+                                <input type="hidden" name ="preco_produto" value="<?php echo $value['preco']; ?>">
+								<input href ="inserir_cart.php"type="submit" name= "add_to_cart" style ="margin-top: 5px;" class="btn btn-default add-to-cart" value ="Adicionar ao Carrinho">
+							</div>
+								</div>
+								<div class="choose">
+						</div>
+					</div>
+				</div>
 
-                <?php } ?>
-                </ul>
-            </div>
 
-            <?php
-            
-            echo '<div class="tab-content">';
-            foreach ($res2 as $value1) {
-                $id = $value1['id'];
-                $query3 = "SELECT * FROM produtos WHERE tipo_produto = $id";
-                $res3 = my_query($query3);  
-                $tipo = $value1['tipo'];
-                echo "<div class='tab-pane fade in active' id='$tipo'>";
-                foreach ($res3 as $value) {?>
+
+				<?php 
+			}
+
+				?>
+                </form>
+               
+</div>
+
+<div class="features_items"><!--features_items-->
+<br> <br>
+	<h2 class="title text-center">Peças para Máquina</h2>
+	
+			<?php 
+			
+			
+			$query = "SELECT * FROM produtos WHERE tipo_produto = 6 ";
+			$res = my_query($query);
+			$size = sizeof($res);
+
+
+			foreach ($res as $key => $value) {
+				?>
                 <form action="inserir_cart.php?action=add&id=<?php echo $value['id'] ?>">
-                        <div class="col-sm-3">
-                            <div class="product-image-wrapper">
-                                <div class="single-products">
-                                    <div class="productinfo text-center">
-                                        <img src="../img/produtos/<?php echo $value['foto'];?>" alt="" />
-                                        <h2><?php echo $value['preco'];?>€</h2>
-                                        <p><?php echo $value['nome'];?></p>
-                                        <input type="text" name= "quantidade" class = "form-control" value="1">
-                                        <input type="hidden" name ="nome_produto" value="<?php echo $value['nome']; ?>">
-                                        <input type="hidden" name ="preco_produto" value="<?php echo $value['preco']; ?>">
-                                        <input href ="inserir_cart.php"type="submit" name= "add_to_cart" style ="margin-top: 5px;" class="btn btn-default add-to-cart" value ="Adicionar ao Carrinho">
-                                    </div>   
-                                </div>
-                            </div>
-                            </form>
-                        </div>
-                    <?php 
-                }
-                echo '</div>';
-            }
-            
-            echo '</div>';
-            ?>
+				<div class="col-sm-4">
+						<div  style ="width:250px" class="product-image-wrapper">
+					<div class="single-products">
+							<div class="productinfo text-center">
+								<img src="../img/produtos/<?php echo $value['foto'] ?>" alt="" />
+								<h2><?php echo $value['preco'];?>€</h2>
+								<p><?php echo $value['nome']; ?></p>
+								<input type="text" name= "quantidade" class = "form-control" value="1">
+                                <input type="hidden" name ="nome_produto" value="<?php echo $value['nome']; ?>">
+                                <input type="hidden" name ="preco_produto" value="<?php echo $value['preco']; ?>">
+								<input href ="inserir_cart.php"type="submit" name= "add_to_cart" style ="margin-top: 5px;" class="btn btn-default add-to-cart" value ="Adicionar ao Carrinho">
+							</div>
+								</div>
+								<div class="choose">
+						</div>
+					</div>
+				</div>
+
+
+
+				<?php 
+			}
+
+				?>
+                </form>
+               
+</div>
+
+<div class="features_items"><!--features_items-->
+<br> <br>
+	<h2 class="title text-center">Comida para os animais</h2>
+	
+			<?php 
+			
+			
+			$query = "SELECT * FROM produtos WHERE tipo_produto = 7 ";
+			$res = my_query($query);
+			$size = sizeof($res);
+
+
+			foreach ($res as $key => $value) {
+				?>
+                <form action="inserir_cart.php">
+				<div class="col-sm-4">
+						<div  style ="width:250px" class="product-image-wrapper">
+					<div class="single-products">
+							<div class="productinfo text-center">
+								<img src="../img/produtos/<?php echo $value['foto'] ?>" alt="" />
+								<h2><?php echo $value['preco']?>€</h2>
+								<p><?php echo $value['nome'] ?></p>
+								<input type="text" name= "quantidade" class = "form-control" value="1">
+                                <input type="hidden" name ="nome_produto" value="<?php echo $value['nome'] ?>">
+                                <input type="hidden" name ="preco_produto" value="<?php echo $value['preco'] ?>">
+								<input href ="inserir_cart.php"type="submit" name= "add_to_cart" style ="margin-top: 5px;" class="btn btn-default add-to-cart" value ="Adicionar ao Carrinho">
+							</div>
+								</div>
+								<div class="choose">
+						</div>
+					</div>
+				</div>
+
+
+
+				<?php 
+			}
+
+				?>
+                </form>
+               
+</div>
+
+
             <div class="table-responsive">
             
             <table class ="table table-bordered">
@@ -186,14 +264,3 @@ include '../library/db.lib.php';
             <form action="sucesso.php">
             <button id="submit" name ="submit" type="submit" class="btn btn-default">Comprar</button>
             </form>
-            <script src="js/jquery.js"></script>
-	<script src="js/bootstrap.min.js"></script>
-	<script src="js/jquery.scrollUp.min.js"></script>
-	<script src="js/price-range.js"></script>
-    <script src="js/jquery.prettyPhoto.js"></script>
-    <script src="js/main.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
-	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-
-
